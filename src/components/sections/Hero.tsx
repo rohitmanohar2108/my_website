@@ -68,14 +68,14 @@ const Hero = () => {
               className="px-6 py-3 mt-9 bg-black border border-white/50 text-white rounded-md flex items-center group hover:shadow-lg hover:border-white/30  transition-all duration-300"
             >
               Let's Talk
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 hidden sm:inline" />
             </button>
             <button
               onClick={scrollToWork}
               className="px-6 py-3 lg:px-6 lg:py-3  mt-9  bg-black border border-white/50 text-white rounded-md flex items-center group hover:shadow-lg hover:border-white/30 transition-all duration-300"
             >
               View My Work
-              <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
+              <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300 hidden sm:inline" />
             </button>
           </div>
         </div>
