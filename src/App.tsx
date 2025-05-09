@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen bg-gray-900 text-white">
+    <div className="flex h-screen bg-black text-white">
       {/* Desktop sidebar */}
       <div className="hidden lg:block fixed h-full">
         <Sidebar />
