@@ -22,7 +22,7 @@ const MobileHeader = ({ toggleSidebar }: MobileHeaderProps) => {
   className={`fixed z-30 px-6 py-4 flex items-center justify-between font-dm transition-all duration-300 ${
     scrolled
       ? "top-0 left-0 right-0 bg-gray-950 shadow-lg border-none"
-      : "top-4 left-4 right-4 bg-gary-950 border border-white/15 bg-black/40 shadow-xl rounded-2xl "
+      : "top-4 left-4 right-4 bg-gary-950 border border-white/20 bg-black/40 shadow-xl rounded-2xl "
   }`}
 >
 

@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black z-10"></div>
 
       <div className="container mx-auto relative z-20">
-        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl shadow-lg backdrop-blur-none bg-black/60 lg:bg-black/40 border border-white/15">
+        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl shadow-lg backdrop-blur-none bg-black/60 lg:bg-black/40 border border-white/20">
           <div className="mb-8 inline-block">
             <div className="px-4 py-1 font-dm border border-orange-400 rounded-full text-orange-400 text-sm mb-6 opacity-0 animate-fadeIn">
               Full Stack Developer
@@ -56,7 +56,7 @@ const Hero = () => {
           </h1>
           <div className="text-lg lg:text-xl text-white">
             Want to become the best{"  "}
-            <span className="inline-block px-2 py-2 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
+            <span className="inline-block px-3 py-2 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
               Top 1%
             </span>{"  "}
             software developer
