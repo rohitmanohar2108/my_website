@@ -53,7 +53,7 @@ const MobileHeader = () => {
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="flex items-center space-x-1 px-3 py-2 bg-zinc-900 text-gray-300 rounded-full hover:bg-zinc-950 transition-all"
+          className="flex items-center space-x-1 px-3 py-2 bg-zinc-950 text-gray-300 rounded-full hover:bg-zinc-900 transition-all"
         >
           <div className="flex items-center space-x-2">
             <User className="h-4 w-4 text-orange-400" />
