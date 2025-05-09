@@ -34,7 +34,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-5xl font-dm lg:text-8xl font-bold mb-6 opacity-0 animate-slideUp">
+          <h1 className="text-4xl font-dm lg:text-8xl font-bold mb-6 opacity-0 animate-slideUp">
             <span className="text-white">Hello, I'm </span>
             <span className="text-orange-400">
               <Typewriter
