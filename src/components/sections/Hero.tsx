@@ -56,7 +56,7 @@ const Hero = () => {
           </h1>
           <div className="text-lg lg:text-xl text-white">
             Want to become the best{"  "}
-            <span className="inline-block px-3 py-2 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
+            <span className="inline-block px-3 lg:py-2 py-1 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
               Top 1%
             </span>{"  "}
             software developer
