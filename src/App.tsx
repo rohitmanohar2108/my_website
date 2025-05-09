@@ -8,9 +8,7 @@ import './index.css';
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  
 
   return (
     <div className="flex h-screen bg-black text-white">
@@ -21,7 +19,7 @@ function App() {
 
       {/* Mobile header and sidebar */}
       <div className="block lg:hidden">
-        <MobileHeader toggleSidebar={toggleSidebar} />
+        <MobileHeader  />
         {isSidebarOpen && (
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 z-40"

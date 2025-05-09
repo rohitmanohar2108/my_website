@@ -44,7 +44,7 @@ const MobileHeader = () => {
           : "top-4 left-4 right-4 bg-black/40 border border-white/20 rounded-2xl shadow-xl"
       }`}
     >
-      <div className="flex items-center space-x-2 text-2xl font-bold text-white">
+      <div className="flex items-center space-x-1 text-2xl font-bold text-white">
         <ChevronsRight className="w-6 h-6 text-orange-400" />
         <span>ROHIT</span>
       </div>
@@ -69,7 +69,7 @@ const MobileHeader = () => {
 
         {/* Dropdown Menu */}
         <div
-          className={`absolute right-0 mt-2 w-52 origin-top-right bg-black border border-gray-700 rounded-lg shadow-lg p-2 z-50 transition-all duration-300 ease-in-out transform ${
+          className={`absolute right-0 mt-2 w-44 origin-top-right bg-black border border-gray-700 rounded-lg shadow-lg p-2 z-50 transition-all duration-300 ease-in-out transform ${
             dropdownOpen
               ? "opacity-100 scale-100 pointer-events-auto"
               : "opacity-0 scale-95 pointer-events-none"
