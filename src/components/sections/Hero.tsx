@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black z-10"></div>
 
       <div className="container mx-auto relative z-20">
-        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl shadow-lg backdrop-blur-none bg-black/60 lg:bg-black/40 border border-white/20">
+        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl shadow-lg backdrop-blur-none bg-black/60 lg:bg-black/40 border border-gray-900">
           <div className="mb-8 inline-block">
             <div className="px-4 py-1 font-dm border border-orange-400 rounded-full text-orange-400 text-sm mb-6 opacity-0 animate-fadeIn">
               Full Stack Developer
