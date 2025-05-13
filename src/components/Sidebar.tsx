@@ -13,7 +13,7 @@ import {
   Instagram,
 } from "lucide-react";
 
-const Sidebar = () => {
+const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -32,66 +32,47 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-72 h-full bg-black  flex flex-col items-center py-8 px-6 font-dm">
-      <div className="mb-12">
-        <div className="flex items-center space-x-1 text-3xl font-bold text-orange-500 px-2 py-2 bg-black rounded-lg">
-          <ChevronsRight className="w-6 h-6 text-orange-500" />
-          <span>ROHIT</span>
-        </div>
+    <div
+      className={`fixed top-0 z-[1000] ml-10 max-w-9xl w-[95%] px-6 py-4 mx-auto mt-2 bg-black/80 backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-dm ${
+        mobile ? "flex flex-col space-y-4" : "flex justify-between items-center"
+      }`}
+    >
+      {/* Brand */}
+      <div className="flex items-center space-x-2 text-2xl font-bold text-orange-500">
+        <ChevronsRight className="w-6 h-6" />
+        <span>ROHIT</span>
       </div>
 
-      <nav className="flex flex-col space-y-4 w-full">
+      {/* Nav links */}
+      <nav className={`flex ${mobile ? "flex-col space-y-2" : "space-x-6"} items-center ml-16`}>
         {navItems.map(({ id, icon: Icon, label }) => (
           <button
             key={id}
             onClick={() => scrollToSection(id)}
-            className="flex items-center space-x-4 px-4 py-3 hover:font-medium rounded-lg hover:border-l border-orange-400 hover:bg-white/20 transition-all duration-300 group w-full"
+            className={`flex items-center space-x-2 px-3 py-2 rounded-full hover:bg-orange-500/20 transition-colors`}
           >
-            <Icon className="h-5 w-5 text-gray-400 group-hover:text-orange-400" />
-            <span className="text-gray-300 group-hover:text-white  transition-colors duration-300">
+            <Icon className="h-4 w-4 text-gray-400 group-hover:text-orange-400" />
+            <span className="text-sm text-gray-300 group-hover:text-white">
               {label}
             </span>
           </button>
         ))}
       </nav>
 
-      <div className="mt-auto pt-8 border-t border-gray-900 w-full">
-        <div className="flex flex-col items-center space-y-4">
-          <div className="w-12 h-12 rounded-full bg-stone-700 flex items-center justify-center">
-            <span className="text-white font-bold">JD</span>
-          </div>
-          <div className="text-center">
-            <h3 className="font-medium text-white">John Doe</h3>
-            <p className="text-sm text-gray-400">Full Stack Developer</p>
-          </div>
+      {/* Social icons (desktop only) */}
+      {!mobile && (
+        <div className="flex space-x-3">
+          {[Github, Twitter, Linkedin, Instagram].map((Icon, index) => (
+            <a
+              key={index}
+              href="#"
+              className="p-2 bg-gray-800/60 rounded-full text-gray-300 hover:text-white hover:bg-orange-500/20 transition-colors"
+            >
+              <Icon className="h-4 w-4" />
+            </a>
+          ))}
         </div>
-      </div>
-      <div className="flex space-x-4 mt-4">
-        <a
-          href="#"
-          className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-orange-900/50 transition-colors"
-        >
-          <Github className="h-5 w-5" />
-        </a>
-        <a
-          href="#"
-          className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-orange-900/50 transition-colors"
-        >
-          <Twitter className="h-5 w-5" />
-        </a>
-        <a
-          href="#"
-          className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-orange-900/50 transition-colors"
-        >
-          <Linkedin className="h-5 w-5" />
-        </a>
-        <a
-          href="#"
-          className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-orange-900/50 transition-colors"
-        >
-          <Instagram className="h-5 w-5" />
-        </a>
-      </div>
+      )}
     </div>
   );
 };

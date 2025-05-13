@@ -4,40 +4,36 @@ import MainContent from './components/MainContent';
 import MobileHeader from './components/MobileHeader';
 import './index.css';
 
-
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  
-
   return (
-    <div className="flex h-screen bg-black text-white">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block fixed h-full">
+    <div className="min-h-screen bg-black text-white flex flex-col">
+      {/* Desktop Top Navbar */}
+      <div className="hidden lg:block">
         <Sidebar />
       </div>
 
-      {/* Mobile header and sidebar */}
+      {/* Mobile Header */}
       <div className="block lg:hidden">
-        <MobileHeader  />
+        <MobileHeader />
         {isSidebarOpen && (
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 z-40"
             onClick={() => setIsSidebarOpen(false)}
           >
             <div 
-              className="absolute left-0 h-full w-64 bg-gray-900 shadow-2xl z-50 transform transition-transform duration-300"
+              className="absolute top-0 left-0 w-full bg-gray-900 shadow-2xl z-50 transition-transform duration-300"
               onClick={(e) => e.stopPropagation()}
             >
-              <Sidebar />
+              <Sidebar mobile />
             </div>
           </div>
         )}
       </div>
 
       {/* Main content */}
-      <div className="flex-1 lg:ml-72">
-        
+      <div className="flex-1">
         <MainContent />
       </div>
     </div>

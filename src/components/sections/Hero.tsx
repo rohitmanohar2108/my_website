@@ -27,9 +27,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black z-10"></div>
 
       <div className="container mx-auto relative z-20">
-        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl shadow-lg backdrop-blur-none bg-black/70 lg:bg-black/40 border border-zinc-900">
-          <div className="mb-8 inline-block">
-            <div className="px-4 py-1 font-dm border border-orange-400 rounded-full text-orange-400 text-sm mb-6 opacity-0 animate-fadeIn">
+        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl backdrop-blur-none bg-black/70 lg:bg-black/40 border-white/60  lg:border border-zinc-800">
+          <div className="mb-8 inline-block lg:ml-[44%]">
+            <div className="px-4 py-1 font-dm bg-zinc-900 border border-orange-400 rounded-full text-orange-400 text-sm mb-6 opacity-0 animate-fadeIn">
               Full Stack Developer
             </div>
           </div>
@@ -40,7 +40,6 @@ const Hero = () => {
               <Typewriter
                 words={[
                   "Rohit Manohar",
-
                   "Developer",
                   "CSE Student at NITK",
                   "Tech Enthusiast",
@@ -54,7 +53,7 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <div className="text-lg lg:text-xl text-white">
+          <div className="text-lg lg:text-xl text-white lg:ml-[33%] ">
             Want to become the best{"  "}
             <span className="inline-block px-3 lg:py-2 py-1 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
               Top 1%
@@ -62,7 +61,7 @@ const Hero = () => {
             software developer
           </div>
 
-          <div className="flex space-x-6 opacity-0 animate-slideUp animation-delay-400">
+          <div className="flex space-x-6 opacity-0 animate-slideUp animation-delay-400 lg:ml-[38%]">
             <button
               onClick={scrollToContact}
               className="px-6 py-3 mt-9 bg-black border border-white/50 text-white rounded-md flex items-center group hover:shadow-lg hover:border-white/30  transition-all duration-300"

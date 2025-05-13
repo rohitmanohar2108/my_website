@@ -11,7 +11,7 @@ const About = () => {
         
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex-1">
-            <div className="relative aspect-square overflow-hidden rounded-xl mb-6">
+            <div className="relative aspect-square overflow-hidden rounded-xl mb-6 border border-zinc-700">
               <img 
                 src="https://anjaneyauniversity.ac.in/blog/wp-content/uploads/2023/08/wepik-export-20230808104826aZeq.jpeg" 
                 alt="Profile" 
@@ -28,7 +28,7 @@ const About = () => {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              <div className="p-4 bg-black rounded-lg flex items-start border border-zinc-700">
+              <div className="p-4 bg-purple-500/10 hover:bg-purple-500/20 rounded-lg flex items-start border border-zinc-700 hover:border-purple-500">
                 <div className="p-2 bg-purple-500/20 rounded-lg mr-4 border border-zinc-700">
                   <Code className="h-5 w-5 text-purple-500" />
                 </div>
@@ -38,7 +38,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-black rounded-lg flex items-start border border-zinc-700">
+              <div className="p-4 bg-pink-500/10 hover:bg-pink-500/20 rounded-lg flex items-start border border-zinc-700 hover:border-pink-500">
                 <div className="p-2 bg-pink-500/20 rounded-lg mr-4 border border-zinc-700">
                   <Server className="h-5 w-5 text-pink-500" />
                 </div>
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-black rounded-lg flex items-start border border-zinc-700">
+              <div className="p-4 bg-blue-500/10 hover:bg-blue-500/20 rounded-lg flex items-start border border-zinc-700 hover:border-blue-500">
                 <div className="p-2 bg-blue-500/20 rounded-lg mr-4 border border-zinc-700">
                   <Palette className="h-5 w-5 text-blue-500" />
                 </div>
@@ -58,7 +58,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-black rounded-lg flex items-start border border-zinc-700">
+              <div className="p-4 bg-orange-500/10 hover:bg-orange-500/20 rounded-lg flex items-start border border-zinc-700 hover:border-orange-500">
                 <div className="p-2 bg-orange-500/20 rounded-lg mr-4 border border-zinc-700">
                   <User className="h-5 w-5 text-orange-500" />
                 </div>

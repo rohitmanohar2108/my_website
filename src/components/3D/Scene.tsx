@@ -40,7 +40,7 @@ function Network() {
   const groupRef = useRef<THREE.Group>(null);
 
   const { nodes, connections } = useMemo(() => {
-    const nodeCount = 50;
+    const nodeCount = 15;
     const nodePositions: [number, number, number][] = [];
     const nodeConnections: Array<{ start: number; end: number }> = [];
 
