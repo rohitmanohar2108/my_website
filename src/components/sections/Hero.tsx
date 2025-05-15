@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowRight } from "lucide-react";
-import Scene from "../3D/Scene";
 import { Typewriter } from "react-simple-typewriter";
+import AnimatedBackground from "../3D/AnimatedBackground";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -21,22 +21,22 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center py-20 px-4 md:px-10 relative overflow-hidden"
     >
-      <div>
-        <Scene />
+      <div className="absolute inset-0 z-20">
+        <AnimatedBackground />
       </div>
       <div className="absolute inset-0 bg-black z-10"></div>
-
+      <div className="bg-red-500 z-50"></div>
       <div className="container mx-auto relative z-20">
-        <div className="w-full lg:w-[100%]  px-12 py-12 rounded-xl backdrop-blur-none bg-black/70 lg:bg-black/40 border-white/60  lg:border border-zinc-800">
+        <div className="w-full lg:w-[100%]  px-12 py-12 bg-stone-700/20 border border-zinc-900 rounded-xl ">
           <div className="mb-8 inline-block lg:ml-[44%]">
-            <div className="px-4 py-1 font-dm bg-zinc-900 border border-orange-400 rounded-full text-orange-400 text-sm mb-6 opacity-0 animate-fadeIn">
+            <div className="px-4 py-1 font-dm bg-zinc-900 border border-orange-400 rounded-full text-white text-sm mb-6 opacity-0 animate-fadeIn">
               Full Stack Developer
             </div>
           </div>
 
           <h1 className="text-4xl font-dm lg:text-8xl font-bold mb-6 opacity-0 animate-slideUp">
             <span className="text-white">Hello, I'm </span>
-            <span className="text-orange-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-neutral-200 to-green-700">
               <Typewriter
                 words={[
                   "Rohit Manohar",
@@ -53,11 +53,13 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <div className="text-lg lg:text-xl text-white lg:ml-[33%] ">
+
+          <div className="text-lg lg:text-xl text-white  lg:ml-[33%] ">
             Want to become the best{"  "}
             <span className="inline-block px-3 lg:py-2 py-1 bg-zinc-900 border border-orange-400 rounded-full text-orange-400 transform -rotate-12">
               Top 1%
-            </span>{"  "}
+            </span>
+            {"  "}
             software developer
           </div>
 

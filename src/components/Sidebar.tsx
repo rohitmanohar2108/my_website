@@ -38,21 +38,25 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       }`}
     >
       {/* Brand */}
-      <div className="flex items-center space-x-2 text-2xl font-bold text-orange-500">
+      <div className="flex items-center space-x-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-900 via-purple-400 to-orange-500">
         <ChevronsRight className="w-6 h-6" />
-        <span>ROHIT</span>
+        <span>ROHIT M.</span>
       </div>
 
       {/* Nav links */}
-      <nav className={`flex ${mobile ? "flex-col space-y-2" : "space-x-6"} items-center ml-16`}>
+      <nav
+        className={`flex ${
+          mobile ? "flex-col space-y-2" : "space-x-6"
+        } items-center ml-16`}
+      >
         {navItems.map(({ id, icon: Icon, label }) => (
           <button
             key={id}
             onClick={() => scrollToSection(id)}
-            className={`flex items-center space-x-2 px-3 py-2 rounded-full hover:bg-orange-500/20 transition-colors`}
+            className="group flex items-center space-x-2 px-3 py-2 rounded-full hover:bg-orange-500/20 transition-all duration-300 "
           >
-            <Icon className="h-4 w-4 text-gray-400 group-hover:text-orange-400" />
-            <span className="text-sm text-gray-300 group-hover:text-white">
+            <Icon className="h-4 w-4 text-gray-400 group-hover:text-orange-400 transition-colors" />
+            <span className="text-sm  transition-all duration-500 text-white group-hover:text-white">
               {label}
             </span>
           </button>

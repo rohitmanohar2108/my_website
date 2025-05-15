@@ -62,53 +62,63 @@ const Experience = () => {
           <h6 className="text-orange-400 font-medium mb-2">EXPERIENCE</h6>
           <h2 className="text-3xl md:text-4xl font-bold">Work History</h2>
         </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {experienceData.map((item, index) => (
-            <div 
-              key={item.id}
-              className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} relative overflow-hidden transform transition-all duration-500 hover:scale-[1.02] ${
-                animateCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-white/5"></div>
-              <div className="absolute -left-4 -bottom-4 w-20 h-20 rounded-full bg-white/5"></div>
-              
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-xl font-bold mb-1">{item.role}</h3>
-                  <p className="text-gray-300">{item.company}</p>
-                  <p className="text-gray-400 text-sm">{item.duration}</p>
+
+        {/* Dotted Line and Cards */}
+        <div className="relative">
+          {/* Horizontal dotted line for large screens */}
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 border-t-2 border-dashed border-stone-500 z-0"></div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative z-10">
+            {experienceData.map((item, index) => (
+              <div 
+                key={item.id}
+                className={`p-6 rounded-2xl border border-zinc-500 bg-gradient-to-br ${item.color} relative overflow-hidden transform transition-all duration-500 hover:scale-[1.02] ${
+                  animateCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                }`}
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
+                {/* Connecting Dot on top center of card */}
+                <div className="hidden lg:block absolute  -top-3 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-orange-400 rounded-full z-50 border-2 border-white"></div>
+
+                {/* Decorative Blurs */}
+                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-white/5"></div>
+                <div className="absolute -left-4 -bottom-4 w-20 h-20 rounded-full bg-white/5"></div>
+                
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h3 className="text-xl font-bold mb-1">{item.role}</h3>
+                    <p className="text-gray-300">{item.company}</p>
+                    <p className="text-gray-400 text-sm">{item.duration}</p>
+                  </div>
+                  <div className="p-2 bg-white/10 rounded-lg">
+                    <Briefcase className="h-5 w-5 text-white" />
+                  </div>
                 </div>
-                <div className="p-2 bg-white/10 rounded-lg">
-                  <Briefcase className="h-5 w-5 text-white" />
+                
+                <p className="text-gray-300 text-sm mb-6">{item.description}</p>
+                
+                <div className="mb-6">
+                  <h4 className="text-sm text-gray-300 mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {item.technologies.map((tech, i) => (
+                      <div key={i} className="px-3 py-1 bg-white/10 rounded-full text-xs">
+                        {tech}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="mt-auto">
+                  <a 
+                    href={item.link} 
+                    className="text-sm font-medium text-white hover:text-purple-300 transition-colors"
+                  >
+                    View Details →
+                  </a>
                 </div>
               </div>
-              
-              <p className="text-gray-300 text-sm mb-6">{item.description}</p>
-              
-              <div className="mb-6">
-                <h4 className="text-sm text-gray-300 mb-2">Technologies:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {item.technologies.map((tech, i) => (
-                    <div key={i} className="px-3 py-1 bg-white/10 rounded-full text-xs">
-                      {tech}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              <div className="mt-auto">
-                <a 
-                  href={item.link} 
-                  className="text-sm font-medium text-white hover:text-purple-300 transition-colors"
-                >
-                  View Details →
-                </a>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
