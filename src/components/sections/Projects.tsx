@@ -1,6 +1,9 @@
-import { Code } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { Code } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import { twMerge } from "tailwind-merge";
 
 const Projects = () => {
   const projectData = [
@@ -8,29 +11,32 @@ const Projects = () => {
       id: 1,
       title: "Airline Booking System",
       duration: "March 2024 - April 2024",
-      description: "Developed a full-stack airline booking system enabling users to search, book, and cancel flights with secure login and admin panel.",
+      description:
+        "Developed a full-stack airline booking system enabling users to search, book, and cancel flights with secure login and admin panel.",
       technologies: ["React", "Node.js", "Express", "MongoDB"],
       color: "from-teal-900 to-emerald-900",
-      link: "https://github.com/your-username/airline-booking-system"
+      link: "https://github.com/your-username/airline-booking-system",
     },
     {
       id: 2,
       title: "Portfolio Website",
       duration: "January 2024 - Present",
-      description: "Built a fully responsive portfolio with smooth animations, dark/light mode toggle, and interactive UI components.",
+      description:
+        "Built a fully responsive portfolio with smooth animations, dark/light mode toggle, and interactive UI components.",
       technologies: ["React", "TailwindCSS", "Framer Motion", "Lottie"],
       color: "from-purple-900 to-pink-900",
-      link: "https://github.com/your-username/portfolio"
+      link: "https://github.com/your-username/portfolio",
     },
     {
       id: 3,
       title: "News Aggregator",
       duration: "February 2024",
-      description: "A React app fetching and displaying categorized news using an external API with shimmer loading and scroll-to-top feature.",
+      description:
+        "A React app fetching and displaying categorized news using an external API with shimmer loading and scroll-to-top feature.",
       technologies: ["React", "TypeScript", "NewsAPI", "GSAP"],
       color: "from-yellow-900 to-orange-900",
-      link: "https://github.com/your-username/news-aggregator"
-    }
+      link: "https://github.com/your-username/news-aggregator",
+    },
   ];
 
   const [animateCards, setAnimateCards] = useState(false);
@@ -45,7 +51,7 @@ const Projects = () => {
       { threshold: 0.1 }
     );
 
-    const section = document.getElementById('projects');
+    const section = document.getElementById("projects");
     if (section) observer.observe(section);
 
     return () => {
@@ -65,8 +71,8 @@ const Projects = () => {
           {projectData.map((item, index) => (
             <div
               key={item.id}
-              className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} relative overflow-hidden transform transition-all duration-500 hover:scale-[1.02] flex flex-col ${
-                animateCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+              className={`p-6 rounded-2xl bg-black relative overflow-hidden transform transition-all duration-500 hover:scale-[1.02] flex flex-col ${
+                animateCards ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
@@ -89,7 +95,10 @@ const Projects = () => {
                 <h4 className="text-sm text-gray-300 mb-2">Technologies:</h4>
                 <div className="flex flex-wrap gap-2">
                   {item.technologies.map((tech, i) => (
-                    <div key={i} className="px-3 py-1 bg-white/10 rounded-full text-xs text-white">
+                    <div
+                      key={i}
+                      className="px-3 py-1 bg-white/10 rounded-full text-xs text-white"
+                    >
                       {tech}
                     </div>
                   ))}

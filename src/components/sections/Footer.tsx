@@ -1,34 +1,52 @@
-import { Github, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
+import { TextHoverEffect } from "../ui/TextHoverEffect";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 py-10 px-4 md:px-10 font-dm">
+    <footer className="bg-black py-10 px-4 md:px-10 font-dm z-50">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-800 pt-8">
           <div className="text-center md:text-left mb-6 md:mb-0">
             <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 mb-2">
-              John Doe
+              Rohit Manohar
             </div>
             <p className="text-gray-400">
               &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
           </div>
-          
+
           <div className="flex space-x-4">
-            <a href="#" className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors">
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
+            >
               <Github className="h-5 w-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors">
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
+            >
               <Twitter className="h-5 w-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors">
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors">
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
+            >
               <Instagram className="h-5 w-5" />
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Animated Text */}
+      <div className="mt-8 h-64 flex items-center justify-center">
+        <TextHoverEffect text="ROHIT" />
       </div>
     </footer>
   );

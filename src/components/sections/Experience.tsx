@@ -1,5 +1,8 @@
-import { Briefcase } from 'lucide-react';
-import { useEffect, useState } from 'react';
+"use client";
+
+import { Briefcase } from "lucide-react";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Experience = () => {
   const experienceData = [
@@ -8,35 +11,42 @@ const Experience = () => {
       role: "Senior Frontend Developer",
       company: "Alphabet Inc.",
       duration: "2020 - Present",
-      description: "Lead a team of developers to create responsive and performant web applications. Implemented CI/CD pipelines and improved code quality standards.",
+      description:
+        "Lead a team of developers to create responsive and performant web applications. Implemented CI/CD pipelines and improved code quality standards.",
       technologies: ["React", "TypeScript", "GraphQL", "Jest"],
-      color: "from-cyan-900 to-blue-900",
-      link: "#"
+      color: "from-black to-zinc-900",
+      borderColor: "border-zinc-800",
+      link: "#",
     },
     {
       id: 2,
       role: "Full Stack Developer",
       company: "Microsoft",
       duration: "2018 - 2020",
-      description: "Developed and maintained cloud-based applications. Collaborated with product managers to define and implement new features.",
+      description:
+        "Developed and maintained cloud-based applications. Collaborated with product managers to define and implement new features.",
       technologies: ["Node.js", "React", "Azure", "MongoDB"],
-      color: "from-blue-900 to-indigo-900",
-      link: "#"
+      color: "from-black to-zinc-900",
+      borderColor: "border-zinc-800",
+      link: "#",
     },
     {
       id: 3,
       role: "Web Developer",
       company: "Apple Inc.",
       duration: "2016 - 2018",
-      description: "Created responsive web applications and implemented modern UI components. Optimized site performance and improved user experience.",
+      description:
+        "Created responsive web applications and implemented modern UI components. Optimized site performance and improved user experience.",
       technologies: ["JavaScript", "Vue.js", "CSS", "PHP"],
-      color: "from-indigo-900 to-purple-900",
-      link: "#"
-    }
+      color: "from-black to-zinc-900",
+      borderColor: "border-zinc-800",
+      link: "#",
+    },
   ];
-  
+
   const [animateCards, setAnimateCards] = useState(false);
-  
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -46,44 +56,51 @@ const Experience = () => {
       },
       { threshold: 0.1 }
     );
-    
-    const section = document.getElementById('experience');
+
+    const section = document.getElementById("experience");
     if (section) observer.observe(section);
-    
     return () => {
       if (section) observer.unobserve(section);
     };
   }, []);
 
   return (
-    <section id="experience" className="py-20 px-4 md:px-10 bg-gray-900 font-dm">
+    <section id="experience" className="py-20 px-4 md:px-10 bg-black font-dm">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">EXPERIENCE</h6>
           <h2 className="text-3xl md:text-4xl font-bold">Work History</h2>
         </div>
 
-        {/* Dotted Line and Cards */}
-        <div className="relative">
-          {/* Horizontal dotted line for large screens */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 border-t-2 border-dashed border-stone-500 z-0"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {experienceData.map((item, index) => (
+            <div
+              key={item.id}
+              className="relative group block p-2 h-full w-full"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <AnimatePresence>
+                {hoveredIndex === index && (
+                  <motion.span
+                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                    layoutId="hoverBackground"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                    exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+                  />
+                )}
+              </AnimatePresence>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative z-10">
-            {experienceData.map((item, index) => (
-              <div 
-                key={item.id}
-                className={`p-6 rounded-2xl border border-zinc-500 bg-gradient-to-br ${item.color} relative overflow-hidden transform transition-all duration-500 hover:scale-[1.02] ${
-                  animateCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-                }`}
-                style={{ transitionDelay: `${index * 150}ms` }}
+              <motion.div
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border ${item.borderColor} hover:border-transparent relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
+                initial={{ opacity: 0, y: 24 }}
+                animate={animateCards ? { opacity: 1, y: 0, transition: { delay: index * 0.15 } } : {}}
               >
-                {/* Connecting Dot on top center of card */}
-                <div className="hidden lg:block absolute  -top-3 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-orange-400 rounded-full z-50 border-2 border-white"></div>
-
                 {/* Decorative Blurs */}
-                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-white/5"></div>
-                <div className="absolute -left-4 -bottom-4 w-20 h-20 rounded-full bg-white/5"></div>
-                
+                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-white/5 pointer-events-none" />
+                <div className="absolute -left-4 -bottom-4 w-20 h-20 rounded-full bg-white/5 pointer-events-none" />
+
                 <div className="flex justify-between items-start mb-6">
                   <div>
                     <h3 className="text-xl font-bold mb-1">{item.role}</h3>
@@ -94,31 +111,36 @@ const Experience = () => {
                     <Briefcase className="h-5 w-5 text-white" />
                   </div>
                 </div>
-                
-                <p className="text-gray-300 text-sm mb-6">{item.description}</p>
-                
+
+                <p className="text-gray-300 text-sm mb-6 flex-grow">{item.description}</p>
+
                 <div className="mb-6">
                   <h4 className="text-sm text-gray-300 mb-2">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {item.technologies.map((tech, i) => (
-                      <div key={i} className="px-3 py-1 bg-white/10 rounded-full text-xs">
+                      <div
+                        key={i}
+                        className="px-3 py-1 bg-white/10 rounded-full text-xs"
+                      >
                         {tech}
                       </div>
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="mt-auto">
-                  <a 
-                    href={item.link} 
+                  <a
+                    href={item.link}
                     className="text-sm font-medium text-white hover:text-purple-300 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Details →
                   </a>
                 </div>
-              </div>
-            ))}
-          </div>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -126,3 +148,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
