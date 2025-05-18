@@ -14,8 +14,8 @@ const Experience = () => {
       description:
         "Lead a team of developers to create responsive and performant web applications. Implemented CI/CD pipelines and improved code quality standards.",
       technologies: ["React", "TypeScript", "GraphQL", "Jest"],
-      color: "from-black to-zinc-900",
-      borderColor: "border-zinc-800",
+      color: "#111827",
+      borderColor: "border-zinc-700",
       link: "#",
     },
     {
@@ -26,8 +26,8 @@ const Experience = () => {
       description:
         "Developed and maintained cloud-based applications. Collaborated with product managers to define and implement new features.",
       technologies: ["Node.js", "React", "Azure", "MongoDB"],
-      color: "from-black to-zinc-900",
-      borderColor: "border-zinc-800",
+      color: "#111827",
+      borderColor: "border-zinc-700",
       link: "#",
     },
     {
@@ -38,8 +38,8 @@ const Experience = () => {
       description:
         "Created responsive web applications and implemented modern UI components. Optimized site performance and improved user experience.",
       technologies: ["JavaScript", "Vue.js", "CSS", "PHP"],
-      color: "from-black to-zinc-900",
-      borderColor: "border-zinc-800",
+      color: "#111827",
+      borderColor: "",
       link: "#",
     },
   ];
@@ -65,7 +65,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="py-20 px-4 md:px-10 bg-black font-dm">
+    <section id="experience" className="py-20 px-4 md:px-10 bg-gray-950 font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">EXPERIENCE</h6>
@@ -83,7 +83,7 @@ const Experience = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#111827] block rounded-3xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -93,7 +93,7 @@ const Experience = () => {
               </AnimatePresence>
 
               <motion.div
-                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border ${item.borderColor} hover:border-transparent relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-[#242436]  hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
                 initial={{ opacity: 0, y: 24 }}
                 animate={animateCards ? { opacity: 1, y: 0, transition: { delay: index * 0.15 } } : {}}
               >

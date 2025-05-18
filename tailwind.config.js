@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         dm: ['"DM Sans"', "sans-serif"],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
       animation: {
         rotate: "rotate 6s linear infinite",

@@ -60,7 +60,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-20 px-4 md:px-10 bg-gray-950 font-dm">
+    <section id="projects" className="py-20 px-4 md:px-10 bg-gray-950 font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-green-400 font-medium mb-2">PROJECTS</h6>
@@ -97,7 +97,7 @@ const Projects = () => {
                   {item.technologies.map((tech, i) => (
                     <div
                       key={i}
-                      className="px-3 py-1 bg-white/10 rounded-full text-xs text-white"
+                      className="px-3 py-1 bg-gradient-to-b from-black to-slate-800 rounded-full text-xs text-white"
                     >
                       {tech}
                     </div>

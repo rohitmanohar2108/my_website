@@ -38,7 +38,7 @@ const MobileHeader = () => {
 
   return (
     <div
-      className={`fixed z-30 px-6 py-3 flex items-center justify-between font-dm transition-all duration-300 ${
+      className={`fixed z-30 px-6 py-3 flex items-center justify-between font-sans transition-all duration-300 ${
         scrolled
           ? "top-0 left-0 right-0 bg-gray-950 shadow-lg"
           : "top-4 left-4 right-4 bg-black/40 border border-zinc-900 rounded-2xl shadow-xl"

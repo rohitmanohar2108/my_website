@@ -3,7 +3,7 @@ import { TextHoverEffect } from "../ui/TextHoverEffect";
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-10 px-4 md:px-10 font-dm z-50">
+    <footer className="bg-black py-10 px-4 md:px-10 font-sans z-50">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-800 pt-8">
           <div className="text-center md:text-left mb-6 md:mb-0">

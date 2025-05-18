@@ -40,9 +40,9 @@ const CustomTypewriter = () => {
   }, [charIndex, isDeleting, index]);
 
   return (
-    <span className={`${texts[index].color}`}>
+    <span className={`${texts[index].color} sm:text-5xl lg:text-7xl`}>
       {displayedText}
-      <span className="animate-pulse font-dm">|</span>
+      <span className="animate-pulse font-sans">|</span>
     </span>
   );
 };

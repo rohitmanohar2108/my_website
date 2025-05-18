@@ -12,8 +12,12 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -33,7 +37,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
 
   return (
     <div
-      className={`fixed top-0 z-[1000] ml-10 max-w-9xl w-[95%] px-6 py-4 mx-auto mt-2 bg-black/80 backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-dm ${
+      className={`fixed top-0 z-[1000] ml-10 max-w-9xl w-[95%] px-6 py-4 mx-auto mt-2 bg-[#0b0f19] backdrop-blur-lg rounded-2xl shadow-lg border border-[#242436] font-sans ${
         mobile ? "flex flex-col space-y-4" : "flex justify-between items-center"
       }`}
     >
@@ -49,21 +53,39 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
           mobile ? "flex-col space-y-2" : "space-x-6"
         } items-center ml-16`}
       >
-        {navItems.map(({ id, icon: Icon, label }) => (
-          <button
+        {navItems.map(({ id, icon: Icon, label }, index) => (
+          <div
             key={id}
-            onClick={() => scrollToSection(id)}
-            className="group flex items-center space-x-2 px-3 py-2 rounded-full hover:bg-orange-500/20 transition-all duration-300 "
+            className="relative group"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <Icon className="h-4 w-4 text-gray-400 group-hover:text-orange-400 transition-colors" />
-            <span className="text-sm  transition-all duration-500 text-white group-hover:text-white">
-              {label}
-            </span>
-          </button>
+            <AnimatePresence>
+              {hoveredIndex === index && (
+                <motion.span
+                  layoutId="hoverBackground"
+                  className="absolute inset-0 rounded-full bg-[#111827]"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                  exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+                />
+              )}
+            </AnimatePresence>
+
+            <button
+              onClick={() => scrollToSection(id)}
+              className="relative z-10 group flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300"
+            >
+              <Icon className="h-4 w-4 text-gray-400 group-hover:text-orange-400 transition-colors" />
+              <span className="text-sm text-white group-hover:text-white transition-all duration-500">
+                {label}
+              </span>
+            </button>
+          </div>
         ))}
       </nav>
 
-      {/* Social icons (desktop only) */}
+      {/* Social icons */}
       {!mobile && (
         <div className="flex space-x-3">
           {[Github, Twitter, Linkedin, Instagram].map((Icon, index) => (

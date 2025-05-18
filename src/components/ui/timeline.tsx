@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -23,7 +19,8 @@ const projectData = [
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     color: "from-teal-900 to-emerald-900",
     link: "https://github.com/your-username/airline-booking-system",
-    image: "https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=", // replace with real image
+    image:
+      "https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=", // replace with real image
   },
   {
     id: 2,
@@ -34,7 +31,8 @@ const projectData = [
     technologies: ["React", "TailwindCSS", "Framer Motion", "Lottie"],
     color: "from-purple-900 to-pink-900",
     link: "https://github.com/your-username/portfolio",
-    image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
+    image:
+      "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
   },
   {
     id: 3,
@@ -45,7 +43,8 @@ const projectData = [
     technologies: ["React", "TypeScript", "NewsAPI", "GSAP"],
     color: "from-yellow-900 to-orange-900",
     link: "https://github.com/your-username/news-aggregator",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s",
   },
 ];
 
@@ -72,7 +71,7 @@ export const Timeline = () => {
   const timelineData: TimelineEntry[] = projectData.map((project) => ({
     title: project.title,
     content: (
-      <div className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-md border dark:border-neutral-800">
+      <div className="bg-white dark:bg-[#0b0f19] p-6 rounded-xl shadow-xl border border-neutral-800 font-sans ">
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
           {project.duration}
         </p>
@@ -83,7 +82,7 @@ export const Timeline = () => {
           {project.technologies.map((tech, i) => (
             <span
               key={i}
-              className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs text-black dark:text-white"
+              className="bg-gray-200 dark:bg-[#111827] px-3 py-1 rounded-md border border-gray-600 text-xs text-black dark:text-white"
             >
               {tech}
             </span>
@@ -100,17 +99,18 @@ export const Timeline = () => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400"
+          className="inline-flex items-center gap-2 px-3 py-1 text-sm rounded-md bg-[#111827] border border-gray-600 text-white hover:bg-[#1a2332] hover:border-blue-500 transition duration-200"
         >
-          <FaGithub /> View on GitHub
+          <FaGithub /> GitHub
         </a>
       </div>
     ),
   }));
 
   return (
-    <div id="projects"
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+    <div
+      id="projects"
+      className="w-full bg-white dark:bg-gray-950 font-sans md:px-10"
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">

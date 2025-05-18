@@ -12,7 +12,7 @@ const Education = () => {
       duration: "2022 - 2026",
       description:
         "Pursuing core courses in Computer Science with a strong foundation in algorithms, data structures, computer networks, and Artificial Intelligence.Engaged in project work across domain",
-      color: "from-zinc-900 to-black",
+      color: "#111827",
       borderColor: "border-zinc-400",
       topics: "40+ Courses",
       problems: "4 Years",
@@ -26,7 +26,7 @@ const Education = () => {
       duration: "2020 - 2022",
       description:
         "Achieved top ranks in SOF International Olympiads 2022 — Rank 1 in Mathematics and Science, and Rank 5 in English at the college level.Engaged in project work across domain  Olympiads 2022 — Rank 1 in Mathematics and Sci",
-      color: "from-zinc-900 to-black",
+      color: "#111827",
       borderColor: "border-purple-100",
       topics: "12+ Courses",
       problems: "2 Years",
@@ -40,7 +40,7 @@ const Education = () => {
       duration: "2020 - 2022",
       description:
         "Achieved top ranks in SOF International Olympiads 2022 — Rank 1 in Mathematics and Science, and Rank 5 in English at the college level.Engaged in project work across domain  Olympiads 2022 — Rank 1 in Mathematics and Sci",
-      color: "from-zinc-900 to-black",
+      color: "#111827",
       borderColor: "border-purple-100",
       topics: "12+ Courses",
       problems: "2 Years",
@@ -70,7 +70,7 @@ const Education = () => {
   }, []);
 
   return (
-    <section id="education" className="py-20 px-4 md:px-10 bg-gray-950 font-dm">
+    <section id="education" className="py-20 px-4 md:px-10 bg-gray-950 font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">EDUCATION</h6>
@@ -88,7 +88,7 @@ const Education = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-3xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -98,7 +98,7 @@ const Education = () => {
               </AnimatePresence>
 
               <div
-                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-zinc-700  relative overflow-hidden transform transition-all duration-500 z-20 ${
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color}   border border-[#242436] hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
                   animateCards
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-12"

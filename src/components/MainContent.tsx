@@ -9,18 +9,21 @@ import Projects from "./sections/Projects";
 import Baground from "./sections/Baground";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { Timeline } from "./ui/timeline";
+import { GoogleGeminiEffectDemo } from "./ui/GoogleGeminiEffectDemo";
+import MobileHeader from "./MobileHeader";
 
 const MainContent = () => {
   return (
     <div className="pt-16 lg:pt-0">
       <Hero />
-      <About />
-      
+
+      <GoogleGeminiEffectDemo />
       <GlowingEffect />
       <Education />
       <Experience />
       <Skills />
       <Timeline />
+      <Contact />
       <Footer />
     </div>
   );
