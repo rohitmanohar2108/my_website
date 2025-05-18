@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 md:px-10 bg-black font-sans">
+    <section id="contact" className="py-20 px-4 md:px-10 dark:bg-gray-950 font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">CONTACT</h6>
@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-gray-800 rounded-2xl p-6 lg:p-8 shadow-lg relative overflow-hidden">
+          <div className="bg-[#0b0f19] border border-neutral-800 rounded-2xl p-6 lg:p-8 shadow-lg relative overflow-hidden">
             <div className="absolute -right-12 -top-12 w-36 h-36 rounded-full bg-purple-900/10"></div>
             <div className="absolute -left-12 -bottom-12 w-36 h-36 rounded-full bg-purple-900/10"></div>
             

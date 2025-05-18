@@ -21,7 +21,7 @@ export function BackgroundBeamsDemo() {
   };
 
   return (
-    <div className="w-full min-h-screen h-[100dvh] relative lg:-mt-16 -mt-44 bg-zinc-950 overflow-hidden flex items-center justify-center px-4 font-sans">
+    <div className="w-full min-h-screen h-[100dvh] relative lg:-mt-16 -mt-44 bg-gray-950 overflow-hidden flex items-center justify-center px-4 font-sans">
       <div className="z-10 text-center w-full max-w-3xl">
         <h1 className=" text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
           <span className="text-white">Hello, I am </span>

@@ -27,7 +27,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
 
   const navItems = [
     { id: "home", icon: Home, label: "Home" },
-    { id: "about", icon: User, label: "About" },
+   
     { id: "education", icon: BookOpen, label: "Education" },
     { id: "experience", icon: Briefcase, label: "Experience" },
     { id: "skills", icon: Puzzle, label: "Skills" },
