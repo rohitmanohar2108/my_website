@@ -22,7 +22,7 @@ export function BackgroundBeamsDemo() {
   };
 
   return (
-    <div className="w-full min-h-screen h-[100dvh] relative bg-gray-950 overflow-hidden flex items-center justify-center px-4 font-sans -mt-16">
+    <div className="w-full min-h-screen h-[100dvh] relative bg-gray-950 overflow-hidden flex items-center justify-center px-4 font-sans -mt-28 lg:-mt-16">
       <div className="">
         <div className="z-10 max-w-6xl w-full flex flex-col lg:flex-row justify-between border-2 border-dashed border-[#242436] shadow-2xl px-8 py-8 gap-12">
           {/* LEFT SECTION */}
@@ -33,7 +33,7 @@ export function BackgroundBeamsDemo() {
                 className="mt-5"
                 words={[
                   "Rohit Manohar",
-                  "Frontend Developer",
+                  "App Developer",
                   "CSE Student @ NITK",
                   "Tech Enthusiast",
                 ]}
