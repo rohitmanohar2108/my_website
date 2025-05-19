@@ -26,7 +26,7 @@ export function BackgroundBeamsDemo() {
       <div className="w-full max-w-6xl relative grid grid-cols-1 lg:grid-cols-2 gap-16 border-2 border-dashed border-zinc-700 shadow-2xl px-8 py-8 z-10 ">
         
         {/* Vertical Dashed Divider Between Left & Right */}
-        <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 w-0.5 border-l-2 border-dashed border-zinc-500 opacity-80 pointer-events-none" />
+        <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 w-0.5 border-l-2 border-dashed border-zinc-700 opacity-80 pointer-events-none" />
 
         {/* LEFT COLUMN */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center space-y-6">
