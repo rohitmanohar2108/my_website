@@ -65,7 +65,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="py-20 px-4 md:px-10 bg-gray-950 font-sans">
+    <section id="experience" className="py-20 px-4 md:px-10 bg-black font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">EXPERIENCE</h6>
@@ -83,7 +83,7 @@ const Experience = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#111827] block rounded-3xl"
+                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#111827] block rounded-xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -93,7 +93,7 @@ const Experience = () => {
               </AnimatePresence>
 
               <motion.div
-                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-[#242436]  hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
+                className={`p-6 rounded-xl bg-gradient-to-br ${item.color} border border-neutral-800  hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
                 initial={{ opacity: 0, y: 24 }}
                 animate={animateCards ? { opacity: 1, y: 0, transition: { delay: index * 0.15 } } : {}}
               >

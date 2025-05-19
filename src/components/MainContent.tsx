@@ -11,6 +11,7 @@ import { GlowingEffect } from "./ui/glowing-effect";
 import { Timeline } from "./ui/timeline";
 import { GoogleGeminiEffectDemo } from "./ui/GoogleGeminiEffectDemo";
 import MobileHeader from "./MobileHeader";
+import { FeaturesSectionDemo } from "./ui/FeaturesSectionDemo";
 
 const MainContent = () => {
   return (
@@ -18,6 +19,7 @@ const MainContent = () => {
       <Hero />
 
       <GoogleGeminiEffectDemo />
+      <FeaturesSectionDemo />
       <GlowingEffect />
       <Education />
       <Experience />
