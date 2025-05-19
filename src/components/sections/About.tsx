@@ -31,7 +31,7 @@ const About = () => {
               web applications using cutting-edge technologies. My journey in
               web development began with a passion for building intuitive
               interfaces and has evolved into crafting comprehensive full-stack
-              solutions.
+              solutions. and wanted ro score the modst of the folloeing of thebsame 
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
