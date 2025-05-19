@@ -40,10 +40,10 @@ export function BackgroundBeamsDemo() {
               />
             </h1>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8 z-50">
               <button
                 onClick={scrollToContact}
-                className="px-4 py-3 bg-white  border border-zinc-800 transition duration-300 rounded-lg text-black flex items-center text-sm sm:text-base"
+                className="px-3 py-3 bg-white  border border-zinc-800 transition duration-300 rounded-lg text-black flex items-center text-sm sm:text-base"
               >
                 Contact Me
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -51,7 +51,7 @@ export function BackgroundBeamsDemo() {
 
               <button
                 onClick={scrollToWork}
-                className="px-4 py-2 bg-black  border border-zinc-700  transition duration-200 rounded-lg text-white flex items-center text-sm sm:text-base"
+                className="px-3 py-2 bg-black  border border-zinc-700  transition duration-200 rounded-lg text-white flex items-center text-sm sm:text-base"
               >
                 View Projects
                 <ArrowDown className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
