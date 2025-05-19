@@ -33,7 +33,7 @@ export function BackgroundBeamsDemo() {
                 className="mt-5"
                 words={[
                   "Rohit Manohar",
-                  "Developer",
+                  "Frontend Developer",
                   "CSE Student @ NITK",
                   "Tech Enthusiast",
                 ]}
