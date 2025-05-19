@@ -105,7 +105,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <img
-            src="/images/featured1.png"
+            src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/038/datas/original.png"
             alt="header"
             width={100}
             height={100}
@@ -140,11 +140,11 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "/images/featured2.jpeg",
-    "/images/featured3.jpeg",
-    "/images/featured4.jpeg",
-    "/images/featured5.jpeg",
-    "/images/featured6.jpeg",
+    "https://www.abhibus.com/blog/wp-content/uploads/2023/05/Top-20-Places-to-Visit-in-Ooty-in-2023-That-You-Never-Miss-in-Lifetime-scaled.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e3/8b/c4/surathkal-beach.jpg?w=1200&h=-1&s=1",
+    "https://s7ap1.scene7.com/is/image/incredibleindia/nitk-lighthouse-mangalore-karnataka-1-attr-hero?qlt=82&ts=1726722270501",
+    "https://i.redd.it/sunset-at-nitk-beach-v0-wlk90wwig0ta1.jpg?width=4032&format=pjpg&auto=webp&s=b1b917546aae785d92a330b99f3da333d8c76a90",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2PMys3b_V7TYsiq5OUpjkuL3RhZbo3RNRLg&s",
   ];
 
   const imageVariants = {

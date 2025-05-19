@@ -36,7 +36,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
 
   return (
     <div
-      className={`fixed top-0 z-[1000] ml-10 max-w-9xl w-[95%] px-6 py-4 mx-auto mt-2 bg-[#0b0f19] backdrop-blur-lg rounded-2xl shadow-lg border border-[#242436] font-sans ${
+      className={`fixed top-0 z-[1000] ml-44 max-w-8xl w-[85%] px-6 py-4 mx-auto mt-2 bg-[#0b0f19] backdrop-blur-lg rounded-2xl shadow-lg border border-[#242436] font-sans ${
         mobile ? "flex flex-col space-y-4" : "flex justify-between items-center"
       }`}
     >
