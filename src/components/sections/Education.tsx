@@ -11,7 +11,7 @@ const Education = () => {
       institution: "National Institute of Technology Karnataka",
       duration: "2022 - 2026",
       description:
-        "Pursuing core courses in Computer Science with a strong foundation in algorithms, data structures, computer networks, and Artificial Intelligence.Engaged in project work across domain",
+        "Pursuing core courses in Computer Science with a strong foundation in algorithms, data structures, computer networks, and Artificial Intelligence. Engaged in project work across domain that put the positive impacts",
       color: "#111827",
       borderColor: "border-zinc-400",
       topics: "40+ Courses",
@@ -47,6 +47,7 @@ const Education = () => {
       icon: <FaSchool className="w-12 h-12 text-orange-300" />,
       Status: "Completed",
     },
+  
   ];
 
   const [animateCards, setAnimateCards] = useState(false);
@@ -73,8 +74,8 @@ const Education = () => {
     <section id="education" className="py-20 px-4 md:px-10 bg-black font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
-          <h6 className="text-orange-400 font-medium mb-2">EDUCATION</h6>
-          <h2 className="text-3xl md:text-4xl font-bold">Academic Background</h2>
+          <h6 className="text-orange-400 font-medium  mb-2">EDUCATION</h6>
+          <h2 className="text-3xl md:text-5xl font-medium">Academic Background</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -88,7 +89,7 @@ const Education = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-xl"
+                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-lg"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -98,7 +99,7 @@ const Education = () => {
               </AnimatePresence>
 
               <div
-                className={`p-6 rounded-xl bg-gradient-to-br ${item.color}   border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
+                className={`p-6 rounded-lg bg-gradient-to-br ${item.color}   border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
                   animateCards
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-12"
@@ -110,7 +111,7 @@ const Education = () => {
 
                 <div className="flex justify-between items-start mb-6">
                   <div>
-                    <h3 className="text-xl font-bold mb-1">{item.degree}</h3>
+                    <h3 className="text-2xl font-medium mb-1">{item.degree}</h3>
                     <p className="text-gray-300">{item.institution}</p>
                     <p className="text-gray-400 text-sm">{item.duration}</p>
                   </div>

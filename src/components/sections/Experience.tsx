@@ -69,7 +69,7 @@ const Experience = () => {
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">EXPERIENCE</h6>
-          <h2 className="text-3xl md:text-4xl font-bold">Work History</h2>
+          <h2 className="text-3xl md:text-5xl font-medium">Work History</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -103,7 +103,7 @@ const Experience = () => {
 
                 <div className="flex justify-between items-start mb-6">
                   <div>
-                    <h3 className="text-xl font-bold mb-1">{item.role}</h3>
+                    <h3 className="text-2xl font-medium mb-1">{item.role}</h3>
                     <p className="text-gray-300">{item.company}</p>
                     <p className="text-gray-400 text-sm">{item.duration}</p>
                   </div>
