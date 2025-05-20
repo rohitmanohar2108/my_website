@@ -52,7 +52,7 @@ export function BackgroundBeamsDemo() {
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             <button
               onClick={scrollToContact}
-              className="px-4 py-2 bg-white border border-zinc-800 rounded-lg text-black flex items-center text-sm sm:text-base transition"
+              className="px-3 py-2 bg-white border border-zinc-800 rounded-lg text-black flex items-center text-sm sm:text-base transition"
             >
               Contact Me
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -60,7 +60,7 @@ export function BackgroundBeamsDemo() {
 
             <button
               onClick={scrollToWork}
-              className="px-4 py-2 bg-black border border-zinc-700 rounded-lg text-white flex items-center text-sm sm:text-base transition"
+              className="px-3 py-2 bg-black border border-zinc-700 rounded-lg text-white flex items-center text-sm sm:text-base transition"
             >
               View Projects
               <ArrowDown className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
