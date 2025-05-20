@@ -43,8 +43,8 @@ export function BackgroundBeamsDemo() {
             />
           </h1>
 
-          <h2 className="text-lg sm:text-xl font-bold mb-4">About Me</h2>
-          <p className="text-sm sm:text-base max-w-lg">
+          <h2 className="hidden sm:block  text-lg sm:text-xl font-bold mb-4">About Me</h2>
+          <p className="hidden sm:block text-sm sm:text-base max-w-lg">
             I'm a passionate Full Stack Developer and Computer Science student at NITK Surathkal,
             focusing on building clean, efficient, and scalable software solutions.
           </p>
