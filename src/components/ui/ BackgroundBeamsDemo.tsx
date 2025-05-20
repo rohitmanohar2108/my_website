@@ -30,7 +30,7 @@ export function BackgroundBeamsDemo() {
 
         {/* LEFT COLUMN */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center space-y-6 px-2 sm:px-0">
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
             <span className="text-white block mb-2">Hello, I am</span>
             <ContainerTextFlip
               className="mt-1"
