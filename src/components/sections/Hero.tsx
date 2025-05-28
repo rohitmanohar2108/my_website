@@ -11,7 +11,7 @@ const Hero = () => {
       className="min-h-screen w-full flex flex-col items-center justify-center py-20 px-4 md:px-10"
     >
       {/* First: Vortex animation */}
-      <div className="w-screen">
+      <div className="w-screen ">
         <BackgroundBeamsDemo />
       </div>
 

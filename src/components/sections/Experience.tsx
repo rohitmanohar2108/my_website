@@ -83,7 +83,7 @@ const Experience = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#111827] block rounded-xl"
+                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#111827] block rounded-2xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -93,7 +93,7 @@ const Experience = () => {
               </AnimatePresence>
 
               <motion.div
-                className={`p-6 rounded-xl bg-gradient-to-br ${item.color} border border-neutral-800  hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-neutral-800  hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 flex flex-col`}
                 initial={{ opacity: 0, y: 24 }}
                 animate={animateCards ? { opacity: 1, y: 0, transition: { delay: index * 0.15 } } : {}}
               >
@@ -112,7 +112,7 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <p className="text-gray-300 text-sm mb-6 flex-grow">{item.description}</p>
+                <p className="text-gray-300 text-base mb-6 flex-grow">{item.description}</p>
 
                 <div className="mb-6">
                   <h4 className="text-sm text-gray-300 mb-2">Technologies:</h4>

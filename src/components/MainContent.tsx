@@ -12,6 +12,8 @@ import { Timeline } from "./ui/timeline";
 import { GoogleGeminiEffectDemo } from "./ui/GoogleGeminiEffectDemo";
 import MobileHeader from "./MobileHeader";
 import { FeaturesSectionDemo } from "./ui/FeaturesSectionDemo";
+import { RadarSkillsSection } from "./ui/RadarSkillsSection";
+import { LampDemo } from "./ui/lamp";
 
 const MainContent = () => {
   return (
@@ -22,11 +24,12 @@ const MainContent = () => {
       <FeaturesSectionDemo />
       <GlowingEffect />
       <Education />
-      <Experience />
       <Skills />
       <Timeline />
+      <LampDemo />
       <Contact />
       <Footer />
+      
     </div>
   );
 };

@@ -23,7 +23,7 @@ type CodeBlockProps = {
       }>;
     }
 );
-
+//expportinf the cde box is the same as the ,ain function that can be imported into the component
 export const CodeBlock = ({
   language,
   filename,
@@ -54,7 +54,7 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-full rounded-lg bg-slate-900 p-4 font-mono text-sm">
+    <div className="relative w-full rounded-lg bg-slate-900 p-10 font-mono text-sm">
       <div className="flex flex-col gap-2">
         {tabsExist && (
           <div className="flex  overflow-x-auto">

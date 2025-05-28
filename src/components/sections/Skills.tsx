@@ -48,7 +48,7 @@ const Skills = () => {
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">SKILLS</h6>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl  font-medium text-white">
             Technical Expertise
           </h2>
         </div>

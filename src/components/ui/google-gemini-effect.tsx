@@ -2,6 +2,7 @@
 import { cn } from "../lib/utils";
 import { motion, MotionValue } from "motion/react";
 import React from "react";
+import { LampDemo } from "./lamp";
 
 const transition = {
   duration: 0,
@@ -21,10 +22,10 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-40 w-screen ", className)}>
-      <p className="text-3xl md:text-5xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+      <p className="text-3xl md:text-5xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-t from-[#FFA45B] to-[#FFE2C1]">
         {title || `Want to become world's top 1% software Developer`}
       </p>
-      <p className="text-sm md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
+      <p className="text-sm md:text-xl font-normal text-center text-white mt-4 max-w-lg mx-auto">
         {description ||
           `Scroll to explore a blend of design, interactivity,
        and dynamic visuals!`}
@@ -32,7 +33,7 @@ export const GoogleGeminiEffect = ({
      
       <svg
         width="1440"
-        height="890"
+        height="1220"
         viewBox="0 0 1440 890"
         xmlns="http://www.w3.org/2000/svg"
         className=" absolute -top-60  md:-top-40 w-full"

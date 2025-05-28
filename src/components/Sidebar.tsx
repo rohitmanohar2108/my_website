@@ -14,6 +14,11 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { BsGithub, BsInstagram, BsLinkedin, BsTelephone, BsTwitterX } from "react-icons/bs";
+import { BiBriefcase, BiHome } from "react-icons/bi";
+import { GrProjects } from "react-icons/gr";
+import { GiSkills } from "react-icons/gi";
+import { SiEducative } from "react-icons/si";
 
 const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -26,24 +31,24 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
   };
 
   const navItems = [
-    { id: "home", icon: Home, label: "Home" },
-    { id: "education", icon: BookOpen, label: "Education" },
-    { id: "experience", icon: Briefcase, label: "Experience" },
-    { id: "skills", icon: Puzzle, label: "Skills" },
-    { id: "projects", icon: Workflow, label: "Projects" },
-    { id: "contact", icon: Mail, label: "Contact" },
+    { id: "home", icon: BiHome, label: "Home" },
+    { id: "education", icon: SiEducative, label: "Education" },
+//experience section
+    { id: "skills", icon: GiSkills, label: "Skills" },
+    { id: "projects", icon: GrProjects, label: "Projects" },
+    { id: "contact", icon: BsTelephone, label: "Contact" },
   ]; 
 
   return (
     <div
-      className={`fixed top-0 z-[1000] ml-[7.5%] mt-6 max-w-8xl w-[85%] px-6 py-4 mx-auto  bg-black  backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-sans ${
+      className={`fixed top-0 z-[1000] ml-[7.5%] mt-6 max-w-8xl w-[85%] px-6 py-4 mx-auto  bg-gradient-to-b form-[#FFE2C1] to-[#FFA45B]  backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-sans ${
         mobile ? "flex flex-col space-y-4" : "flex justify-between items-center"
       }`}
     >
       {/* Brand */}
       <div className="flex items-center space-x-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-900 via-purple-400 to-orange-500">
         <ChevronsRight className="w-6 h-6" />
-        <span>ROHIT M.</span>
+        <span>ROHIT.</span>
       </div>
 
       {/* Nav links */}
@@ -76,7 +81,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
               className="relative z-10 group flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300"
             >
               <Icon className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
-              <span className="text-lg font-medium text-white group-hover:text-white transition-all duration-500">
+              <span className="text-lg font-medium text-white group-hover:text-[#FFE2C1] transition-all duration-500">
                 {label}
               </span>
             </button>
@@ -87,11 +92,11 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       {/* Social icons */}
       {!mobile && (
         <div className="flex space-x-3">
-          {[Github, Twitter, Linkedin, Instagram].map((Icon, index) => (
+          {[BsGithub, BsTwitterX, BsLinkedin, BsInstagram].map((Icon, index) => (
             <a
               key={index}
               href="#"
-              className="p-3 bg-gray-800/60 rounded-full text-gray-300 hover:text-white hover:bg-zinc-800 transition-colors 300"
+              className="p-3 bg-white rounded-full text-black hover:text-black/90  transition-colors 300"
             >
               <Icon className="h-5 w-5" />
             </a>

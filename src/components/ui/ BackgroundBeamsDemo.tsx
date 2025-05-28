@@ -22,16 +22,17 @@ export function BackgroundBeamsDemo() {
   };
 
   return (
-    <div className="w-full min-h-screen h-[100dvh] relative bg-gray-950 overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-16">
-      <div className="w-full max-w-6xl relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 border-2 border-dashed border-zinc-700 shadow-2xl px-6 sm:px-8 py-8 z-10">
-        
+    <div className="w-full min-h-screen h-[100dvh] relative bg-gray-950 overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-12">
+      <div className="w-full max-w-[87.6%] h-[80%] relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 border rounded-lg border-zinc-800 shadow-2xl px-6 sm:px-8 py-8 z-10">
         {/* Vertical Dashed Divider Between Left & Right (only on large screens) */}
         <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 w-0.5 border-l-2 border-dashed border-zinc-700 opacity-80 pointer-events-none" />
 
         {/* LEFT COLUMN */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center space-y-6 px-2 sm:px-0">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
-            <span className="text-white block mb-2">Hello, I am</span>
+            <span className="text-white font-medium block mb-2">
+              Hello, I am
+            </span>
             <ContainerTextFlip
               className="mt-1"
               words={[
@@ -43,16 +44,35 @@ export function BackgroundBeamsDemo() {
             />
           </h1>
 
-          <h2 className="hidden sm:block  text-lg sm:text-xl font-bold mb-4">About Me</h2>
-          <p className="hidden sm:block text-sm sm:text-base max-w-lg">
-            I'm a passionate Full Stack Developer and Computer Science student at NITK Surathkal,
-            focusing on building clean, efficient, and scalable software solutions.
+          <h2 className="hidden sm:block  text-lg sm:text-2xl font-medium mb-4">
+            About Me
+          </h2>
+          <p className="hidden sm:block text-sm sm:text-lg max-w-5xl leading-relaxed">
+            I'm a Full Stack Developer and a{" "}
+            <span className="bg-green-950 text-lime-500 font-medium px-1 py ml-1">
+              Computer Science undergraduate
+            </span>{" "}
+            at
+            <span className="bg-emerald-950 text-teal-400 font-medium px-1 py ml-1">
+              NITK Surathkal
+            </span>
+            , passionate about crafting{" "}
+            <span className="bg-sky-950 text-sky-500 font-medium px-1 py- ml-1">
+              clean, efficient, and scalable software solutions
+            </span>
+            . I enjoy turning complex problems into simple, elegant code and
+            continuously strive to expand my skill set across the software
+            development spectrum. Whether it's building intuitive frontends or
+            robust backend systems, I take pride in{" "}
+            <span className="bg-yellow-950 text-yellow-500 font-medium px-1 py- ml-1">
+              writing maintainable and high-quality code.
+            </span>
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             <button
               onClick={scrollToContact}
-              className="px-1 py-2 lg:px-4 lg:py-2 bg-white border border-zinc-800 rounded-lg text-black flex items-center text-sm sm:text-base transition"
+              className="px-1 py-2 lg:px-5 lg:py-3 bg-white border border-zinc-800 rounded-lg text-black flex items-center text-sm sm:text-lg transition"
             >
               Contact Me
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -60,7 +80,7 @@ export function BackgroundBeamsDemo() {
 
             <button
               onClick={scrollToWork}
-              className="px-1 py-2  lg:px-4 lg:py-2 bg-black border border-zinc-700 rounded-lg text-white flex items-center text-sm sm:text-base transition"
+              className="px-1 py-2  lg:px-5 lg:py-3 bg-black border border-zinc-700 hover:border-blue-500 transition duration-200 rounded-lg text-white hover:text-blue-500  flex items-center text-sm sm:text-lg "
             >
               View Projects
               <ArrowDown className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -69,7 +89,7 @@ export function BackgroundBeamsDemo() {
         </div>
 
         {/* RIGHT COLUMN – CODE BLOCK */}
-        <div className="flex items-center justify-center px-2 sm:px-6">
+        <div className="flex items-center justify-center px-2 sm:px-6 rounded-lg lg:bg-gradient-to-tl from-[#FFA45B] to-[#FFE2C1]">
           <div className="w-full max-w-md sm:max-w-lg">
             <CodeBlockDemo />
           </div>

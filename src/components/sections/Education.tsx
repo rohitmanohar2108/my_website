@@ -33,20 +33,7 @@ const Education = () => {
       icon: <FaSchool className="w-12 h-12 text-orange-300" />,
       Status: "Completed",
     },
-     {
-      id: 3,
-      degree: "Higher Secondary Education Maharashtra",
-      institution: "Dharampeth Science College, Nagpur",
-      duration: "2020 - 2022",
-      description:
-        "Achieved top ranks in SOF International Olympiads 2022 — Rank 1 in Mathematics and Science, and Rank 5 in English at the college level.Engaged in project work across domain  Olympiads 2022 — Rank 1 in Mathematics and Sci",
-      color: "#111827",
-      borderColor: "border-purple-100",
-      topics: "12+ Courses",
-      problems: "2 Years",
-      icon: <FaSchool className="w-12 h-12 text-orange-300" />,
-      Status: "Completed",
-    },
+    
   
   ];
 
@@ -89,7 +76,7 @@ const Education = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-lg"
+                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-2xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -99,7 +86,7 @@ const Education = () => {
               </AnimatePresence>
 
               <div
-                className={`p-6 rounded-lg bg-gradient-to-br ${item.color}   border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color}   border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
                   animateCards
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-12"
@@ -117,7 +104,7 @@ const Education = () => {
                   </div>
                 </div>
 
-                <p className="text-gray-300 text-sm mb-6">{item.description}</p>
+                <p className="text-gray-300 text-base mb-6">{item.description}</p>
 
                 <div className="flex items-center mb-4">
                   <BookOpen className="h-4 w-4 text-white mr-2" />
