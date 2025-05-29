@@ -12,41 +12,54 @@ interface TimelineEntry {
 const projectData = [
   {
     id: 1,
-    title: "Airline Booking System",
-    duration: "March 2024 - April 2024",
+    title: "FilmNinja - Interactive Movie Browsing App",
+    duration: "May 2024 - June 2024",
     description:
-      "Developed a full-stack airline booking system enabling users to search, book, and cancel flights with secure login and admin panel.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    color: "from-teal-900 to-emerald-900",
-    link: "https://github.com/your-username/airline-booking-system",
+      "Developed a dynamic movie browsing application with a responsive design. Integrated TMDB API for real-time movie data and ChatGPT API for personalized recommendations. Enabled secure user authentication with Firebase.",
+    technologies: ["ReactJs", "JavaScript", "Firebase", "TMDB API", "OpenAI API"],
+    color: "from-indigo-900 to-blue-900",
+    link: "https://github.com/rohitmanohar2108/FilmNinja",
     image:
-      "https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=", // replace with real image
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YX7njxSTaToEKL9QNIC2ZVQvb27yzj_PIw&s", // replace with your image
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    duration: "January 2024 - Present",
+    title: "Image Upscaling using Deep Learning",
+    duration: "July 2024 - Aug 2024",
     description:
-      "Built a fully responsive portfolio with smooth animations, dark/light mode toggle, and interactive UI components.",
-    technologies: ["React", "TailwindCSS", "Framer Motion", "Lottie"],
-    color: "from-purple-900 to-pink-900",
-    link: "https://github.com/your-username/portfolio",
+      "Created a web app to upscale and enhance low-light images. Used a self-supervised CNN with Zero-DCE for brightness correction and GANs for super-resolution. Deployed backend with Flask and frontend using Bootstrap.",
+    technologies: ["Python", "TensorFlow", "OpenCV", "Deep Learning", "Flask"],
+    color: "from-gray-900 to-neutral-800",
+    link: "https://github.com/rohitmanohar2108/image-resolution",
     image:
-      "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
+      "https://images.unsplash.com/photo-1612832020809-c9d453abece6", // replace with your image
   },
   {
     id: 3,
-    title: "News Aggregator",
-    duration: "February 2024",
+    title: "Crypto Trade Simulator",
+    duration: "April 2025 – May 2025",
     description:
-      "A React app fetching and displaying categorized news using an external API with shimmer loading and scroll-to-top feature.",
-    technologies: ["React", "TypeScript", "NewsAPI", "GSAP"],
-    color: "from-yellow-900 to-orange-900",
-    link: "https://github.com/your-username/news-aggregator",
+      "Built a crypto trading simulator using real-time Level-2 orderbook data from OKX via WebSocket. Modeled market behavior with quantile/logistic regression and the Almgren–Chriss framework to calculate net cost per trade.",
+    technologies: ["Python", "WebSocket", "NumPy", "Scikit-learn", "Flask"],
+    color: "from-yellow-900 to-orange-800",
+    link: "https://github.com/rohitmanohar2108/Crypto-Trade-Simulator",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/038/datas/original.png", // replace with your image
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    duration: "May 2024 - Nov 2024",
+    description:
+      "Designed and developed a personal portfolio website using React and TailwindCSS. Added GSAP animations for dynamic transitions and optimized JavaScript for performance. Continually updated content to improve engagement.",
+    technologies: ["ReactJs", "TailwindCSS", "GSAP", "JavaScript"],
+    color: "from-purple-900 to-pink-900",
+    link: "https://github.com/rohitmanohar2108/my_website", // replace with live link
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSID6Z86--oT3Rmdai617u6caujUHt7E2QsCw&s", // replace with your image
   },
 ];
+
 
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);

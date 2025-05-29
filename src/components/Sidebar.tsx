@@ -14,7 +14,13 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsGithub, BsInstagram, BsLinkedin, BsTelephone, BsTwitterX } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTelephone,
+  BsTwitterX,
+} from "react-icons/bs";
 import { BiBriefcase, BiHome } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
@@ -29,15 +35,21 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const socialLinks = [
+    { icon: BsGithub, link: "https://github.com/rohitmanohar2108" },
+    { icon: BsTwitterX, link: "https://twitter.com/your-username" },
+    { icon: BsLinkedin, link: "https://www.linkedin.com/in/rohit-manohar-80b949207/" },
+    { icon: BsInstagram, link: "https://instagram.com/your-username" },
+  ];
 
   const navItems = [
     { id: "home", icon: BiHome, label: "Home" },
     { id: "education", icon: SiEducative, label: "Education" },
-//experience section
+    //experience section
     { id: "skills", icon: GiSkills, label: "Skills" },
     { id: "projects", icon: GrProjects, label: "Projects" },
     { id: "contact", icon: BsTelephone, label: "Contact" },
-  ]; 
+  ];
 
   return (
     <div
@@ -71,7 +83,10 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
                   className="absolute inset-0 rounded-full bg-[#111827]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                  exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
                 />
               )}
             </AnimatePresence>
@@ -92,11 +107,13 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       {/* Social icons */}
       {!mobile && (
         <div className="flex space-x-3">
-          {[BsGithub, BsTwitterX, BsLinkedin, BsInstagram].map((Icon, index) => (
+          {socialLinks.map(({ icon: Icon, link }, index) => (
             <a
               key={index}
-              href="#"
-              className="p-3 bg-white rounded-full text-black hover:text-black/90  transition-colors 300"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white rounded-full text-black hover:text-black/90 transition-colors duration-300"
             >
               <Icon className="h-5 w-5" />
             </a>

@@ -14,33 +14,6 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
           </div>
-
-          <div className="flex space-x-4">
-            <a
-              href="#"
-              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
-            >
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-purple-900/50 transition-colors"
-            >
-              <Instagram className="h-5 w-5" />
-            </a>
-          </div>
         </div>
       </div>
 

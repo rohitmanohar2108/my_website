@@ -9,37 +9,31 @@ const Skills = () => {
       icon: <Code className="h-4 w-4 text-black dark:text-neutral-400" />,
       title: "Frontend Development",
       description:
-        "HTML, CSS, JS, React, Vue.js – built 20+ responsive interfaces and mastered component-driven design.",
+        "HTML, CSS, JS, React, Tailwind CSS – built 20+ responsive interfaces and mastered component-driven design.",
     },
     {
       icon: <Database className="h-4 w-4 text-black dark:text-neutral-400" />,
       title: "Backend & Database",
       description:
-        "Proficient in Node.js, Python, Java, SQL. Experience designing REST APIs and backend logic.",
+        "Python, Java, SQL. Experience designing REST APIs and backend logic.",
+    },
+    {
+      icon: <Code className="h-4 w-4 text-black dark:text-neutral-400" />,
+      title: "Core CS & Coding",
+      description:
+        "Strong foundation in Data Structures, Algorithms, Operating Systems, Computer Networks, and DBMS. Solved 400+ coding questions on various coding platform",
     },
     {
       icon: <Bot className="h-4 w-4 text-black dark:text-neutral-400" />,
       title: "Machine Learning & AI",
-      description:
-        "Worked with TensorFlow, PyTorch, Scikit-learn. Implemented ML models & basic NLP pipelines.",
+      description: "Worked with TensorFlow, PyTorch, NumPy, Scikit-learn, Flask ",
     },
-    {
-      icon: <Globe className="h-4 w-4 text-black dark:text-neutral-400" />,
-      title: "DevOps & Cloud",
-      description:
-        "Hands-on with Docker, Kubernetes, AWS, and CI/CD pipelines for scalable deployment.",
-    },
-    {
-      icon: <BarChart className="h-4 w-4 text-black dark:text-neutral-400" />,
-      title: "Data Analysis",
-      description:
-        "Analyzed datasets using Python, R, and SQL. Visualized insights using Tableau and Matplotlib.",
-    },
+
     {
       icon: <PenTool className="h-4 w-4 text-black dark:text-neutral-400" />,
       title: "UI/UX Design",
       description:
-        "Designed wireframes and prototypes in Figma, Adobe XD. Strong sense of user-centered design.",
+        "Designed wireframes and prototypes in Figma. Strong sense of user-centered design.",
     },
   ];
 

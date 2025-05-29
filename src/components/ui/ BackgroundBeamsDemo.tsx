@@ -22,7 +22,7 @@ export function BackgroundBeamsDemo() {
   };
 
   return (
-    <div className="w-full min-h-screen h-[100dvh] relative bg-gray-950 overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-12">
+    <div className="w-full min-h-screen h-[100dvh] relative bg- overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-12">
       <div className="w-full max-w-[87.6%] h-[80%] relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 border rounded-lg border-zinc-800 shadow-2xl px-6 sm:px-8 py-8 z-10">
         {/* Vertical Dashed Divider Between Left & Right (only on large screens) */}
         <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 w-0.5 border-l-2 border-dashed border-zinc-700 opacity-80 pointer-events-none" />
@@ -30,7 +30,7 @@ export function BackgroundBeamsDemo() {
         {/* LEFT COLUMN */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center space-y-6 px-2 sm:px-0">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
-            <span className="text-white font-medium block mb-2">
+            <span className="text-white font-bold block mb-2">
               Hello, I am
             </span>
             <ContainerTextFlip
@@ -44,12 +44,12 @@ export function BackgroundBeamsDemo() {
             />
           </h1>
 
-          <h2 className="hidden sm:block  text-lg sm:text-2xl font-medium mb-4">
+          <h2 className="hidden sm:block  text-lg sm:text-2xl font-thin mb-4">
             About Me
           </h2>
-          <p className="hidden sm:block text-sm sm:text-lg max-w-5xl leading-relaxed">
+          <p className="hidden sm:block text-sm sm:text-lg font-extralight max-w-5xl leading-relaxed">
             I'm a Full Stack Developer and a{" "}
-            <span className="bg-green-950 text-lime-500 font-medium px-1 py ml-1">
+            <span className="bg-green-950 text-lime-500 font-thin px-1 py ml-1">
               Computer Science undergraduate
             </span>{" "}
             at
@@ -57,7 +57,7 @@ export function BackgroundBeamsDemo() {
               NITK Surathkal
             </span>
             , passionate about crafting{" "}
-            <span className="bg-sky-950 text-sky-500 font-medium px-1 py- ml-1">
+            <span className="bg-sky-950 text-sky-500 font-light px-1 py- ml-1">
               clean, efficient, and scalable software solutions
             </span>
             . I enjoy turning complex problems into simple, elegant code and
