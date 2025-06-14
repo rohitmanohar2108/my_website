@@ -14,13 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsTelephone,
-  BsTwitterX,
-} from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin, BsTelephone, BsTwitterX } from "react-icons/bs";
 import { BiBriefcase, BiHome } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
@@ -35,25 +29,19 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const socialLinks = [
-    { icon: BsGithub, link: "https://github.com/rohitmanohar2108" },
-    { icon: BsTwitterX, link: "https://twitter.com/your-username" },
-    { icon: BsLinkedin, link: "https://www.linkedin.com/in/rohit-manohar-80b949207/" },
-    { icon: BsInstagram, link: "https://instagram.com/your-username" },
-  ];
 
   const navItems = [
     { id: "home", icon: BiHome, label: "Home" },
     { id: "education", icon: SiEducative, label: "Education" },
-    //experience section
+//experience section
     { id: "skills", icon: GiSkills, label: "Skills" },
     { id: "projects", icon: GrProjects, label: "Projects" },
     { id: "contact", icon: BsTelephone, label: "Contact" },
-  ];
+  ]; 
 
   return (
     <div
-      className={`fixed top-0 z-[1000] ml-[7.5%] mt-6 max-w-8xl w-[85%] px-6 py-4 mx-auto  bg-gradient-to-b form-[#FFE2C1] to-[#FFA45B]  backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-sans ${
+      className={`fixed top-0 z-[1000] ml-[5.5%] mt-6 max-w-8xl w-[89%] px-6 py-4 mx-auto  bg-gradient-to-b form-[#FFE2C1] to-[#FFA45B]  backdrop-blur-lg rounded-2xl shadow-lg border border-zinc-800 font-sans ${
         mobile ? "flex flex-col space-y-4" : "flex justify-between items-center"
       }`}
     >
@@ -83,17 +71,14 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
                   className="absolute inset-0 rounded-full bg-[#111827]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                  exit={{
-                    opacity: 0,
-                    transition: { duration: 0.15, delay: 0.2 },
-                  }}
+                  exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
                 />
               )}
             </AnimatePresence>
 
             <button
               onClick={() => scrollToSection(id)}
-              className="relative z-10 group flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300"
+              className="relative z-10 group flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300 "
             >
               <Icon className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
               <span className="text-lg font-medium text-white group-hover:text-[#FFE2C1] transition-all duration-500">
@@ -107,13 +92,11 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       {/* Social icons */}
       {!mobile && (
         <div className="flex space-x-3">
-          {socialLinks.map(({ icon: Icon, link }, index) => (
+          {[BsGithub, BsTwitterX, BsLinkedin, BsInstagram].map((Icon, index) => (
             <a
               key={index}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full text-black hover:text-black/90 transition-colors duration-300"
+              href="#"
+              className="p-3 bg-white rounded-full text-black hover:text-black/90  transition-colors 300"
             >
               <Icon className="h-5 w-5" />
             </a>

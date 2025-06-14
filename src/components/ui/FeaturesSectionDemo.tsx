@@ -18,23 +18,21 @@ export function FeaturesSectionDemo() {
     },
     {
       title: "Capture pictures with AI",
-      description:
-        "Captured stunning photos",
+      description: "Captured stunning photos",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
       title: "My Collage",
-      description:
-        "Four years of learning, building, and evolving at NITK.",
+      description: "Four years of learning, building, and evolving at NITK.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Interactive 3D globe powered by Cobe.js visually demonstrates global deployment capabilities",
-      description:
-        "Just to showcase",
+      title:
+        "Interactive 3D globe powered by Cobe.js visually demonstrates global deployment capabilities",
+      description: "Just to showcase",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -122,19 +120,17 @@ export const SkeletonOne = () => {
 
 export const SkeletonThree = () => {
   return (
-   
-      <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
-          <img
-            src="https://alumni.nitk.ac.in/_next/image?url=%2FNITK5.png&w=3840&q=75"
-            alt="header"
-            width={800}
-            height={800}
-            className="h-full w-full aspect-square object-cover object-center rounded-sm transition-all duration-200"
-          />
-        </div>
+    <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
+      <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
+        <img
+          src="https://alumni.nitk.ac.in/_next/image?url=%2FNITK5.png&w=3840&q=75"
+          alt="header"
+          width={800}
+          height={800}
+          className="h-full w-full aspect-square object-cover object-center rounded-sm transition-all duration-200"
+        />
       </div>
-    
+    </div>
   );
 };
 
@@ -209,9 +205,6 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
-   
-
-    
 
       {/* Gradient overlays */}
       <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />

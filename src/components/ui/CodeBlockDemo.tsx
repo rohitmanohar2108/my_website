@@ -2,9 +2,12 @@
 
 import React from "react";
 import { CodeBlock } from "./code-block";
+import useMediaQuery from "../hooks/ useMediaQuery"
 
 export function CodeBlockDemo() {
-  const code = `const DesignEngineerCard = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
+
+  const largeScreenCode = `const DesignEngineerCard = () => {
   const [ideas, setIdeas] = React.useState(["UI/UX", "React", "System Design"]);
 
   const addIdea = () => {
@@ -30,16 +33,31 @@ export function CodeBlockDemo() {
       </button>
     </div>
   );
-};
-`;
+};`;
+
+  const smallScreenCode = `const MiniCard = () => {
+  const [items, setItems] = React.useState(["Idea 💡"]);
+
+  const addItem = () => {
+    const idea = prompt("Your idea?");
+    if (idea) setItems([...items, idea]);
+  };
 
   return (
-    <div className="max-w-[144%] lg:-mx-28  lg:w-[900%]">
+    <div>
+      <ul>{items.map((i, idx) => <li key={idx}>{i}</li>)}</ul>
+      <button onClick={addItem}>Add</button>
+    </div>
+  );
+};`;
+
+  return (
+    <div className="max-w-[144%] lg:-mx-28  lg:w-[1000%]">
       <CodeBlock
         language="jsx"
-        filename="DesignEngineerCard.jsx"
-        highlightLines={[4, 6, 9, 11, 14]}
-        code={code}
+        filename={isSmallScreen ? "MiniCard.jsx" : "DesignEngineerCard.jsx"}
+        highlightLines={isSmallScreen ? [2, 6] : [4, 6, 9, 11, 14]}
+        code={isSmallScreen ? smallScreenCode : largeScreenCode}
       />
     </div>
   );

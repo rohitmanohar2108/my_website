@@ -14,22 +14,35 @@ import MobileHeader from "./MobileHeader";
 import { FeaturesSectionDemo } from "./ui/FeaturesSectionDemo";
 import { RadarSkillsSection } from "./ui/RadarSkillsSection";
 import { LampDemo } from "./ui/lamp";
+import AnimatedNameTitle from "./ui/AnimatedNameTitle";
+
+import EducationCard from "./sections/EducationCard";
+import AnimatedHub from "./ui/AnimatedHub";
+
+import Skill from "./sections/Skill";
+import Cards from "./sections/Cards";
 
 const MainContent = () => {
   return (
     <div className="pt-16 lg:pt-0">
       <Hero />
-
       <GoogleGeminiEffectDemo />
-      <FeaturesSectionDemo />
+      <div className="">
+        <FeaturesSectionDemo />
+      </div>
       <GlowingEffect />
-      <Education />
+      <div className="bg-zinc-950">
+        <EducationCard />
+      </div>
+
+      <AnimatedHub />
       <Skills />
+  
       <Timeline />
       <LampDemo />
       <Contact />
+
       <Footer />
-      
     </div>
   );
 };

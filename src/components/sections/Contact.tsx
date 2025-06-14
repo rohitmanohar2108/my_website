@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { RadarSkillsSection } from "../ui/RadarSkillsSection";
+import AnimatedHub from "../ui/AnimatedHub";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -91,7 +92,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <RadarSkillsSection />
+         <RadarSkillsSection />
         </div>
       </div>
     </section>

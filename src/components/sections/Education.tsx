@@ -76,7 +76,7 @@ const Education = () => {
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]  block rounded-2xl"
+                    className="absolute inset-0 h-full w-full  bg-neutral-200 dark:bg-[#111827]   block rounded-2xl"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -86,7 +86,7 @@ const Education = () => {
               </AnimatePresence>
 
               <div
-                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color}   border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
+                className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} shadow-[0_0_25px_5px_rgba(255,193,7,0.2)] hover:shadow-transparent border border-neutral-800 hover:border-zinc-700 relative overflow-hidden transform transition-all duration-500 z-20 ${
                   animateCards
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-12"

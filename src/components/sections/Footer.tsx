@@ -1,5 +1,6 @@
 import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
 import { TextHoverEffect } from "../ui/TextHoverEffect";
+import AnimatedNameTitle from "../ui/AnimatedNameTitle";
 
 const Footer = () => {
   return (
@@ -18,9 +19,7 @@ const Footer = () => {
       </div>
 
       {/* Animated Text */}
-      <div className="mt-8 h-64 flex items-center justify-center">
-        <TextHoverEffect text="Rohit M." />
-      </div>
+     
     </footer>
   );
 };

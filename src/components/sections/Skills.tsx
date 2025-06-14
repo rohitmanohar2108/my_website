@@ -38,7 +38,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 md:px-10 bg-black font-sans">
+    <section id="skills" className=" block lg:hidden  py-28 px-4 md:px-10 bg-gradient-to-t from-zinc-950 to-black border-b border-zinc-800 rounded-b-[20%] font-sans">
       <div className="container mx-auto">
         <div className="mb-16 text-center">
           <h6 className="text-orange-400 font-medium mb-2">SKILLS</h6>
@@ -73,7 +73,7 @@ interface GridItemProps {
 const GridItem = ({ icon, title, description }: GridItemProps) => {
   return (
     <li className="min-h-[14rem] list-none">
-      <div className="relative h-full rounded-2xl border border-gray-800 p-2 md:rounded-3xl md:p-3">
+      <div className=" relative h-full rounded-2xl border border-gray-800 p-2 md:rounded-3xl md:p-3">
         <GlowingEffect
           spread={40}
           glow={true}

@@ -2,18 +2,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
-import {
-  Laptop,
-  Smartphone,
-  Paintbrush,
-  Wrench,
-  Server,
-  Github,
-  FileCode,
-  Instagram,
-  Linkedin,
-  X,
-} from "lucide-react";
+
 import { BsDiscord, BsGithub, BsInstagram, BsLinkedin, BsTwitterX, BsWhatsapp } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { DiscardNode } from "three/examples/jsm/nodes/Nodes.js";
@@ -23,22 +12,22 @@ import { CiInstagram } from "react-icons/ci";
 export const RadarSkillsSection = () => {
   return (
     <div className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 overflow-hidden px-4">
-      <div className="mx-auto w-full max-w-3xl">
+      <div className="mx-auto w-full max-w-xl">
         <div className="flex w-full  items-center justify-center space-x-10 md:justify-between md:space-x-0 animate-pulse">
           <IconContainer text="Instagram" delay={0.2} href="https://instagram.com/your_username" icon={<BsInstagram className="h-6 w-6 text-white" />} />
           <IconContainer text="Linkedin" delay={0.4} href="https://linkedin.com/in/your_username" icon={<BsLinkedin className="h-6 w-6 text-white" />} />
           <IconContainer text="Twitter" delay={0.3} href="https://twitter.com/your_username" icon={<BsTwitterX className="h-6 w-6 text-white" />} />
         </div>
       </div>
-
-      <div className="mx-auto w-full max-w-md">
+   
+      <div className="mx-auto w-full max-w-72">
         <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 animate-pulse">
           <IconContainer text="Github" delay={0.5} href="https://github.com/your_username" icon={<BsGithub className="h-6 w-6 text-white" />} />
           <IconContainer text="Whatsapp" delay={0.8}   href="https://wa.me/your_phone_number" icon={<BsWhatsapp className="h-6 w-6 text-white" />} />
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-3xl ">
+      <div className="mx-auto w-full max-w-80 ">
         <div className="flex w-full items-center  text-white justify-center space-x-10 md:justify-between md:space-x-0 animate-pulse">
           <IconContainer text="Facebook" delay={0.6} icon={<FaFacebook className="h-6 w-6 text-white" />} />
           <IconContainer text="Discord" delay={0.7} icon={<BsDiscord className="h-6 w-6 text-white" />} />
