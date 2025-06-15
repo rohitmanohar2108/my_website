@@ -3,6 +3,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { BackgroundBeams } from "./background-beams";
 
 interface TimelineEntry {
   title: string;
@@ -126,6 +127,7 @@ export const Timeline = () => {
       className="w-full bg-white dark:bg-black font-sans md:px-10"
       ref={containerRef}
     >
+      
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-orange-400  max-w-4xl">
           PROJECTS

@@ -55,11 +55,7 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(120,119,198,0.1),transparent_50%)]"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,119,198,0.1),transparent_50%)]"></div>
-            </div>
+           
 
             <div className="font-medium lg:text-lg text-neutral-700 dark:text-neutral-200">
               {card.content}
@@ -72,6 +68,7 @@ export const CardStack = ({
                 {card.designation}
               </p>
             </div>
+            
           </motion.div>
         );
       })}

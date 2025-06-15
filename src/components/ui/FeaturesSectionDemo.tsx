@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import { cn } from "../lib/utils";
+import { BackgroundBeams } from "./background-beams";
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -34,7 +35,7 @@ export function FeaturesSectionDemo() {
         "Interactive 3D globe powered by Cobe.js visually demonstrates global deployment capabilities",
       description: "Just to showcase",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+      className: "col-span-1 lg:col-span-3 border-b lg:border-transparent",
     },
   ];
   return (

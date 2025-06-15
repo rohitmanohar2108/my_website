@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^9.102.3",
     "@react-three/fiber": "^8.18.0",
+    "@studio-freight/lenis": "^1.0.42",
     "@tabler/icons-react": "^3.33.0",
     "@types/react-syntax-highlighter": "^15.5.13",
     "clsx": "^2.1.1",

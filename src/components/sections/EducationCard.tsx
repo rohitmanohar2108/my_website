@@ -6,28 +6,32 @@ function EducationCard() {
     <div className="">
       <div
         id="education"
-        className="min-h-screen bg-gradient-to-b from-zinc-900 to-black border-t border-zinc-800 rounded-t-full   text-white py-16 px-4 font-sans"
+        className="min-h-screen bg-gradient-to-b from-blue-900 to-black border-t-2 border-blue-400 
+       [box-shadow:0_-15px_20px_rgba(96,165,250,0.5)] rounded-t-full text-white py-16 px-4 font-sans"
       >
-        
+        <div
+          className="absolute ml-[30%] -my-24 w-[800px] h-[300px] rounded-full blur-3xl opacity-30"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, rgba(96,165,250,0.8) 0%, rgba(30,64,175,0.9) 80%)",
+          }}
+        ></div>
+
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 relative">
             <h1 className="text-xl text-orange-400  font-medium mb-2">
               EDUCATION
             </h1>
-            <p className="text-3xl md:text-5xl font-medium text-white  mx-auto">
+            <p className="text-3xl md:text-5xl font-medium text-white  mx-auto ">
               Academic Background
             </p>
           </div>
 
-  
-
-
-
           {/* Education Cards */}
           <div className="relative grid lg:grid-cols-3 gap-8 lg:gap-5 mt-44">
             {/* Bachelor's Degree Card */}
-            <div className="bg-[#0b0f19] rounded-l-2xl p-8 border border-neutral-800  hover:border-zinc-700 transition-colors lg:mt-8">
+            <div className="bg-white/5 rounded-l-2xl p-8 border border-neutral-800  hover:border-zinc-700 transition-colors lg:mt-8">
               <div className="flex items-center mb-6">
                 <Users className="w-6 h-6 text-orange-400 mr-3" />
                 <h2 className="text-2xl font-medium">Higher Secondary</h2>
@@ -94,7 +98,7 @@ function EducationCard() {
             </div>
 
             {/* Higher Secondary Education Card - Overlapping */}
-            <div className="bg-[#0b0f19] rounded-2xl p-8 border border-orange-400  transition-colors relative  lg:scale-110 lg:z-10 lg:shadow-2xl lg:shadow-orange-500/20">
+            <div className="bg-white/5 rounded-2xl p-8 border border-orange-400  transition-colors relative  lg:scale-110 lg:z-10 lg:shadow-2xl lg:shadow-orange-500/20">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                 <span className="bg-orange-500 text-black px-4 py-1 rounded-full text-sm font-semibold">
                   PRESENTLY
@@ -167,7 +171,7 @@ function EducationCard() {
             </div>
 
             {/* Secondary Education Card */}
-            <div className="bg-[#0b0f19] rounded-r-2xl p-8 border border-neutral-800  hover:border-zinc-700 transition-colors lg:mt-8">
+            <div className="bg-white/5 rounded-r-2xl p-8 border border-neutral-800  hover:border-zinc-700 transition-colors lg:mt-8">
               <div className="flex items-center mb-6">
                 <Award className="w-6 h-6 text-orange-400 mr-3" />
                 <h2 className="text-2xl font-medium">Secondary School</h2>

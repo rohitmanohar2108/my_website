@@ -3,6 +3,7 @@ import { cn } from "../lib/utils";
 import { motion, MotionValue } from "motion/react";
 import React from "react";
 import { LampDemo } from "./lamp";
+import { BackgroundBeams } from "./background-beams";
 
 const transition = {
   duration: 0,
@@ -153,6 +154,7 @@ export const GoogleGeminiEffect = ({
           </filter>
         </defs>
       </svg>
+      
     </div>
   );
 };

@@ -15,6 +15,7 @@ import {
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Spotlight } from "./Spotlight";
 import { cn } from "../lib/utils";
+import { BackgroundBeams } from "./background-beams";
 
 interface HubNode {
   id: string;
@@ -114,7 +115,11 @@ const AnimatedHub: React.FC = () => {
   };
 
   return (
-    <div className="hidden sm:block relative w-full h-screen bg-gradient-to-tr from-black via-white/5 to-black  overflow-hidden my-24">
+    <div
+      id="skills"
+      className="hidden sm:block relative w-full h-screen bg-gradient-to-tr from-black via-white/5 to-black  overflow-hidden my-24"
+    >
+ 
       {/* Background Grid */}
 
       <div className="absolute top-20 left-64 w-2 h-2 bg-blue-400/40 rounded-full animate-pulse shadow-[0_0_8px_rgba(96,165,250,0.6)]"></div>
@@ -156,7 +161,7 @@ const AnimatedHub: React.FC = () => {
         <div className="relative w-[800px] h-[600px]">
           {/* SVG for Connections */}
           <svg
-            className="absolute inset-0 w-full h-full border border-neutral-800 rounded-3xl "
+            className="absolute inset-0 w-full h-full border border-neutral-800 rounded-3xl beam-border"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
           >
@@ -219,13 +224,19 @@ const AnimatedHub: React.FC = () => {
             })}
           </svg>
 
-          <div className="">
-           
+         {/* <div className="">
             <Spotlight
               className="-top-40 left-0 md:-top-20 md:left-60"
               fill="white"
             />
-          </div>
+          </div> */}
+          <div className="absolute -top-16 left-[10%] w-32 h-px bg-gradient-to-l from-orange-400 to-transparent mt-4 ml-auto animate-pulse" />
+          <div className="absolute -top-16 right-[10%] w-32 h-px bg-gradient-to-l from-orange-400 to-transparent mt-4 ml-auto animate-pulse" />
+          <div className="absolute -bottom-16 right-[10%] w-32 h-px bg-gradient-to-r from-orange-400 to-transparent mt-4 ml-auto animate-pulse" />
+           <div className="absolute -bottom-16 right-[73%] w-32 h-px bg-gradient-to-r from-orange-400 to-transparent mt-4 ml-auto animate-pulse" />
+           <div className="absolute top-60 right-[120%] w-px h-32 bg-gradient-to-b from-orange-400 to-transparent animate-pulse" />
+           <div className="absolute top-60 left-[120%] w-px h-32 bg-gradient-to-t from-orange-400 to-transparent animate-pulse" />
+
 
           {/* Central Hub */}
           <div
@@ -236,7 +247,7 @@ const AnimatedHub: React.FC = () => {
             }}
           >
             <div className="relative">
-              <div className="w-44 h-44 bg-zinc-900 rounded-2xl border-2 border-orange-400 shadow-2xl flex items-center justify-center">
+              <div className="w-44 h-44 bg-zinc-900 from-black via-white/5 to-black rounded-2xl border-2 border-orange-400 shadow-2xl flex items-center justify-center">
                 {/* Outer Circle */}
                 <div className="w-28 h-28 bg-gradient-to-br from-zinc-800 to-black rounded-full flex items-center justify-center shadow-lg animate-spin-slow">
                   {/* Inner Circle with Ring Effect */}
@@ -250,7 +261,7 @@ const AnimatedHub: React.FC = () => {
                 style={{ animationDuration: "8s" }}
               >
                 <div
-                  className="w-full h-full border-2 border-orange-400 rounded-2xl opacity-30"
+                  className="w-full h-full  border-2 border-zinc-700 rounded-2xl opacity-30"
                   style={{
                     background: `conic-gradient(from ${
                       animationPhase * 3.6
@@ -332,13 +343,13 @@ const AnimatedHub: React.FC = () => {
               <div className="w-1 h-1 bg-orange-400 animate-pulse"></div>
               <div className="w-1 h-1 bg-orange-400 animate-pulse"></div>
               <div className="w-1 h-1 bg-orange-300 animate-pulse"></div>
-              <div className="w-1 h-1 bg-zinc-700"></div>
+              <div className="w-1 h-1 bg-orange-300 animate-pulse"></div>
               <div className="w-1 h-1 bg-zinc-700"></div>
               <div className="w-1 h-1 bg-zinc-700"></div>
             </div>
           </div>
 
-          <div className="absolute -bottom-16 left-[83%] flex flex-col space-y-1">
+          <div className="absolute -bottom-10 left-[83%] flex flex-col space-y-1">
             {/* First row - 4 dots */}
             <div className="flex space-x-1">
               <div className="w-1.5 h-1.5 bg-zinc-800 "></div>
@@ -497,7 +508,7 @@ const AnimatedHub: React.FC = () => {
                   >
                     <div
                       className={`
-                    w-24 h-24   bg-black border border-zinc-800 rounded-lg flex items-center justify-center text-white shadow-lg
+                    w-24 h-24   bg-zinc-950 border border-zinc-800 rounded-lg flex items-center justify-center text-white shadow-lg
                     group-hover:scale-110 transition-transform duration-300 
                   `}
                     >

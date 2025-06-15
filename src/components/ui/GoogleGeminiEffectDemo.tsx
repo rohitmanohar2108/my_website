@@ -2,6 +2,7 @@
 import { useScroll, useTransform } from "motion/react";
 import React from "react";
 import { GoogleGeminiEffect } from "../ui/google-gemini-effect";
+import { BackgroundBeams } from "./background-beams";
 
 export function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -30,6 +31,8 @@ export function GoogleGeminiEffectDemo() {
           pathLengthFifth,
         ]}
       />
+      <BackgroundBeams />
     </div>
+    
   );
 }
