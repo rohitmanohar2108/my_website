@@ -10,12 +10,18 @@ function EducationCard() {
        [box-shadow:0_-15px_20px_rgba(96,165,250,0.5)] rounded-t-full text-white py-16 px-4 font-sans"
       >
         <div
-          className="absolute ml-[30%] -my-24 w-[800px] h-[300px] rounded-full blur-3xl opacity-30"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, rgba(96,165,250,0.8) 0%, rgba(30,64,175,0.9) 80%)",
-          }}
-        ></div>
+  className="absolute 
+             left-1/2 transform -translate-x-1/2 
+             -my-24 sm:-my-20 
+             w-[90%] sm:w-[600px] md:w-[700px] lg:w-[800px] 
+             h-[200px] sm:h-[250px] md:h-[300px] 
+             rounded-full blur-3xl opacity-30"
+  style={{
+    background:
+      "radial-gradient(ellipse at center, rgba(96,165,250,0.8) 0%, rgba(30,64,175,0.9) 80%)",
+  }}
+></div>
+
 
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
