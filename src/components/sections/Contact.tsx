@@ -42,9 +42,10 @@ const Contact = () => {
       id="contact"
       className="py-20 px-4 md:px-10 dark:bg-black font-sans"
     >
+      
       <div className="container mx-auto">
         <div className="mb-16 text-center">
-          <h6 className="text-orange-400 font-medium mb-2">CONTACT</h6>
+          <h6 className="text-orange-400 font-mono text-2xl mb-2">[ CONTACT ]</h6>
           <h2 className="text-3xl md:text-4xl font-medium">Get In Touch</h2>
         </div>
 

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ChevronDown, MoveDown } from "lucide-react";
+import { FaArrowDown } from "react-icons/fa";
 
 function FogUi() {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center">
+    <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center border-b border-zinc-800">
       {/* Main fog effect positioned on the right */}
       <div className="absolute inset-0">
         {/* Primary fog layer - positioned on right side */}
@@ -29,15 +30,24 @@ function FogUi() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl  px-6 lg:-ml-[44%]">
         {/* Grok title */}
-        <h1 className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold tracking-wider mb-4 relative">
-          <span className="grok-text">ROHIT</span>
+        <h1 className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-dm tracking-wider mb-4 ">
+          <span className="bg-gradient-to-r from-zinc-500 to-white bg-clip-text text-transparent">
+            ROHIT
+          </span>
         </h1>
-       {/* <div className="w-32 h-px bg-gradient-to-l from-white to-transparent mt--4 ml-auto animate-pulse" />*/}
+        <h2 className="text-[2rem] md:text-[12rem] lg:text-[2rem] font-bold tracking-wider absolute lg:-my-24 ml-4">
+          M{"   "}A N O H A R
+        </h2>
+        {/* <div className="w-32 h-px bg-gradient-to-l from-white to-transparent mt--4 ml-auto animate-pulse" />*/}
         {/*<div className="w-32 h-px bg-gradient-to-r from-blue-400 to-transparent mt-4 animate-pulse" /> */}
         {/* Search interface */}
       </div>
+      <div className=" text-white absolute bottom-[10%] left-44">
+        <FaArrowDown size={28} />
+      </div>
+      
 
       <style jsx>{`
         .fog-main {
@@ -177,25 +187,6 @@ function FogUi() {
             transform: translate(-1%, -2%) rotate(0.5deg) scale(1.05);
             opacity: 0.9;
           }
-        }
-
-        .grok-text {
-          background: linear-gradient(
-            135deg,
-            rgba(156, 163, 175, 0.9) 0%,
-            rgba(209, 213, 219, 0.8) 25%,
-            rgba(243, 244, 246, 0.7) 50%,
-            rgba(255, 255, 255, 0.6) 75%,
-            rgba(229, 231, 235, 0.5) 100%
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-shadow: 0 0 40px rgba(255, 255, 255, 0.3),
-            0 0 80px rgba(219, 234, 254, 0.2);
-          filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
-          font-weight: 300;
-          letter-spacing: 0.1em;
         }
 
         @media (max-width: 1024px) {

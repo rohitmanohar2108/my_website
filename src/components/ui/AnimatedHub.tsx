@@ -117,7 +117,7 @@ const AnimatedHub: React.FC = () => {
   return (
     <div
       id="skills"
-      className="hidden sm:block relative w-full h-screen bg-gradient-to-tr from-black via-white/5 to-black  overflow-hidden my-24"
+      className="hidden sm:block relative w-full h-screen bg-gradient-to-t from-black via-zinc-900 to-black  overflow-hidden my-24"
     >
  
       {/* Background Grid */}

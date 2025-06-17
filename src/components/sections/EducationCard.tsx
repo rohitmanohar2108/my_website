@@ -6,28 +6,27 @@ function EducationCard() {
     <div className="">
       <div
         id="education"
-        className="min-h-screen bg-gradient-to-b from-blue-900 to-black border-t-2 border-blue-400 
-       [box-shadow:0_-15px_20px_rgba(96,165,250,0.5)] rounded-t-full text-white py-16 px-4 font-sans"
+        className="min-h-screen bg-gradient-to-b from-zinc-800 to-black border-t-2 border-zinc-800 
+  [box-shadow:0_-15px_20px_rgba(113,113,122,0.5)] rounded-t-full text-white py-16 px-4 font-sans"
       >
         <div
-  className="absolute 
-             left-1/2 transform -translate-x-1/2 
-             -my-24 sm:-my-20 
-             w-[90%] sm:w-[600px] md:w-[700px] lg:w-[800px] 
-             h-[200px] sm:h-[250px] md:h-[300px] 
-             rounded-full blur-3xl opacity-30"
-  style={{
-    background:
-      "radial-gradient(ellipse at center, rgba(96,165,250,0.8) 0%, rgba(30,64,175,0.9) 80%)",
-  }}
-></div>
-
+          className="absolute 
+    left-1/2 transform -translate-x-1/2 
+    -my-24 sm:-my-20 
+    w-[90%] sm:w-[600px] md:w-[700px] lg:w-[800px] 
+    h-[200px] sm:h-[250px] md:h-[300px] 
+    rounded-full blur-3xl opacity-30"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, rgba(161,161,170,0.8) 0%, rgba(39,39,42,0.9) 80%)",
+          }}
+        ></div>
 
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16 relative">
-            <h1 className="text-xl text-orange-400  font-medium mb-2">
-              EDUCATION
+            <h1 className="text-xl text-orange-400  font-mono mb-2">
+              [ EDUCATION ]
             </h1>
             <p className="text-3xl md:text-5xl font-medium text-white  mx-auto ">
               Academic Background

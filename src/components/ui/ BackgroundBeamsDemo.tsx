@@ -31,7 +31,6 @@ export function BackgroundBeamsDemo() {
 
         {/* LEFT COLUMN */}
 
-        
         <div className="flex flex-col items-center lg:items-start text-center  lg:text-left justify-center space-y-6 px-2 sm:px-0">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 leading-tight">
             <span className="text-white font-bold block mb-2">Hello, I am</span>
@@ -79,7 +78,6 @@ export function BackgroundBeamsDemo() {
               Contact Me
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </button>
-            
 
             <button
               onClick={scrollToWork}
@@ -92,7 +90,7 @@ export function BackgroundBeamsDemo() {
         </div>
 
         {/* RIGHT COLUMN – CODE BLOCK */}
-        
+
         <div className="absolute top-7 right-12 text-zinc-400 text-2xl font-mono animate-float-slow opacity-40">{`</>`}</div>
 
         <div className="absolute bottom-24 right-16 text-zinc-400 text-2xl font-mono animate-float-fast opacity-35">{`{}`}</div>

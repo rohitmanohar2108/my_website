@@ -31,12 +31,12 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
   };
 
   const navItems = [
-    { id: "home", icon: BiHome, label: "Home" },
-    { id: "education", icon: SiEducative, label: "Education" },
+    { id: "home", icon: BiHome, label: "HOME" },
+    { id: "education", icon: SiEducative, label: "EDUCATION" },
 //experience section
-    { id: "skills", icon: GiSkills, label: "Skills" },
-    { id: "projects", icon: GrProjects, label: "Projects" },
-    { id: "contact", icon: BsTelephone, label: "Contact" },
+    { id: "skills", icon: GiSkills, label: "SKILLS" },
+    { id: "projects", icon: GrProjects, label: "PROJECTS" },
+    { id: "contact", icon: BsTelephone, label: "CONTACT" },
   ]; 
 
   return (
@@ -78,10 +78,10 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
 
             <button
               onClick={() => scrollToSection(id)}
-              className="relative z-10 group flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300 "
+              className="relative z-10 group flex items-center space-x-2 px-3 py-2 font-mono rounded-full transition-all duration-300 "
             >
-              <Icon className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
-              <span className="text-lg font-medium text-white group-hover:text-[#FFE2C1] transition-all duration-500">
+              
+              <span className="text-lg font-medium text-gray-500 group-hover:text-[#FFE2C1] transition-all duration-500">
                 {label}
               </span>
             </button>

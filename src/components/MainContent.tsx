@@ -24,16 +24,18 @@ import { BackgroundBeams } from "./ui/background-beams";
 const MainContent = () => {
   return (
     <div className="pt-16 lg:pt-0">
-      <FogUi />
+      
+      <div className="hidden sm:block"><FogUi /></div>
       <Hero />
 
       <GoogleGeminiEffectDemo />
-      <div className="bg-gradient-to-t from-[rgba(30,64,175,0.9)]/50 via-black to-black">
+      <div className="bg-gradient-to-t from-zinc-800/60 via-black to-black">
         <FeaturesSectionDemo />
         
       </div>
       <GlowingEffect />
-      <div className="bg-gradient-to-b from-[rgba(30,64,175,0.9)]/50  to-black">
+      <div className="bg-gradient-to-b from-zinc-800/60 to-black
+">
         <EducationCard />
       </div>
 
