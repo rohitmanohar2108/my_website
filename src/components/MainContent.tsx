@@ -20,9 +20,11 @@ import EducationCard from "./sections/EducationCard";
 import AnimatedHub from "./ui/AnimatedHub";
 import FogUi from "./ui/FogUi";
 import { BackgroundBeams } from "./ui/background-beams";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const MainContent = () => {
   return (
+    <ParallaxProvider>
     <div className="pt-16 lg:pt-0">
       
       <div className="hidden sm:block"><FogUi /></div>
@@ -48,6 +50,7 @@ const MainContent = () => {
 
       <Footer />
     </div>
+    </ParallaxProvider>
   );
 };
 

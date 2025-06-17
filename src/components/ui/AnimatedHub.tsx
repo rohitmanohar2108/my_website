@@ -16,6 +16,7 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import { Spotlight } from "./Spotlight";
 import { cn } from "../lib/utils";
 import { BackgroundBeams } from "./background-beams";
+import { Parallax } from 'react-scroll-parallax';
 
 interface HubNode {
   id: string;
@@ -115,6 +116,7 @@ const AnimatedHub: React.FC = () => {
   };
 
   return (
+    <Parallax speed={-15}>
     <div
       id="skills"
       className="hidden sm:block relative w-full h-screen bg-gradient-to-t from-black via-zinc-900 to-black  overflow-hidden my-24"
@@ -564,6 +566,7 @@ const AnimatedHub: React.FC = () => {
 
       {/* Title */}
     </div>
+    </Parallax>
   );
 };
 
