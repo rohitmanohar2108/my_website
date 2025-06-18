@@ -8,6 +8,7 @@ function FogUi() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center border-b border-zinc-800">
       {/* Main fog effect positioned on the right */}
+  
       <div className="absolute inset-0">
         {/* Primary fog layer - positioned on right side */}
         <div className="absolute top-0 right-0 w-full h-full">

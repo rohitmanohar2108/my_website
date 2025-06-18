@@ -16,7 +16,8 @@ export function LampDemo() {
         }}
         className="mt-8 bg-white py-4 my-9 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Thanks For<br /> Visiting{" "}<span>🙏🏻</span>
+        Thanks For
+        <br /> Visiting <span>🙏🏻</span>
       </motion.h1>
     </LampContainer>
   );
@@ -37,6 +38,365 @@ export const LampContainer = ({
       )}
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+        <div className="absolute bottom-1 -ml-[82%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            {/* Segment 1 */}
+            <div
+              className="w-36 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 2 */}
+            <div
+              className="w-24 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-135px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 3 */}
+            <div
+              className="w-14 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 4 */}
+            <div
+              className="w-6 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 5 */}
+            <div
+              className="w-24 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="absolute bottom-9 -ml-[75%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            <div
+              className="w-36 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-20 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-145px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-14 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-6 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="absolute bottom-[9%] -ml-[80%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            <div
+              className="w-36 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-16 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-145px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-6 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to left, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
+
+        <div className="absolute bottom-[9%] ml-[80%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            <div
+              className="w-36 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-16 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-145px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-6 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-6 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="absolute bottom-9 ml-[75%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            <div
+              className="w-36 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-20 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-145px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-14 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-6 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            <div
+              className="w-24 h-7 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="absolute bottom-1 ml-[82%] z-0">
+          <div className="flex flex-row items-center space-x-1 h-6">
+            {/* Segment 1 */}
+            <div
+              className="w-36 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "0px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 2 */}
+            <div
+              className="w-24 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-135px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 3 */}
+            <div
+              className="w-14 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-165px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 4 */}
+            <div
+              className="w-6 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-185px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+
+            {/* Segment 5 */}
+            <div
+              className="w-24 h-5 rounded-full"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #71717a, #52525b, #3f3f46, #27272a)",
+                backgroundSize: "300px",
+                backgroundPosition: "-195px",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+        </div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}

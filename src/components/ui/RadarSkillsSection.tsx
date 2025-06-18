@@ -27,7 +27,7 @@ export const RadarSkillsSection = () => {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-80 ">
+      <div className="mx-auto w-full max-w- ">
         <div className="flex w-full items-center  text-white justify-center space-x-10 md:justify-between md:space-x-0 animate-pulse">
           <IconContainer text="Facebook" delay={0.6} icon={<FaFacebook className="h-6 w-6 text-white" />} />
           <IconContainer text="Discord" delay={0.7} icon={<BsDiscord className="h-6 w-6 text-white" />} />

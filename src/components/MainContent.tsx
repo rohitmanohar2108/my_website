@@ -38,6 +38,8 @@ const MainContent = () => {
       <GlowingEffect />
       <div className="bg-gradient-to-b from-zinc-800/60 to-black
 ">
+  
+  
         <EducationCard />
       </div>
 
