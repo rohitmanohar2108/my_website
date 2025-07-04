@@ -23,6 +23,7 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-40 w-screen ", className)}>
+      
       <p className="text-3xl md:text-5xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-t from-[#FFA45B] to-[#FFE2C1]">
         {title || `Want to become world's top 1% software Developer`}
       </p>

@@ -6,7 +6,7 @@ function FogUi() {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center border-b border-zinc-800">
+    <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center ">
       {/* Main fog effect positioned on the right */}
   
       <div className="absolute inset-0">

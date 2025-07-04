@@ -4,6 +4,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BackgroundBeams } from "./background-beams";
+import { Parallax } from "react-scroll-parallax";
 
 interface TimelineEntry {
   title: string;
@@ -17,7 +18,13 @@ const projectData = [
     duration: "May 2024 - June 2024",
     description:
       "Developed a dynamic movie browsing application with a responsive design. Integrated TMDB API for real-time movie data and ChatGPT API for personalized recommendations. Enabled secure user authentication with Firebase.",
-    technologies: ["ReactJs", "JavaScript", "Firebase", "TMDB API", "OpenAI API"],
+    technologies: [
+      "ReactJs",
+      "JavaScript",
+      "Firebase",
+      "TMDB API",
+      "OpenAI API",
+    ],
     color: "from-indigo-900 to-blue-900",
     link: "https://github.com/rohitmanohar2108/FilmNinja",
     image:
@@ -32,8 +39,7 @@ const projectData = [
     technologies: ["Python", "TensorFlow", "OpenCV", "Deep Learning", "Flask"],
     color: "from-gray-900 to-neutral-800",
     link: "https://github.com/rohitmanohar2108/image-resolution",
-    image:
-      "https://images.unsplash.com/photo-1612832020809-c9d453abece6", // replace with your image
+    image: "https://images.unsplash.com/photo-1612832020809-c9d453abece6", // replace with your image
   },
   {
     id: 3,
@@ -61,7 +67,6 @@ const projectData = [
   },
 ];
 
-
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -86,7 +91,7 @@ export const Timeline = () => {
     title: project.title,
     content: (
       <div className="bg-white dark:bg-[#0b0f19] p-6 rounded-xl shadow-xl border border-neutral-800 font-sans ">
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+        <p className="text-sm text-[#1FB8CD] dark:text-gray-400 mb-2">
           {project.duration}
         </p>
         <p className="text-base text-black dark:text-white mb-3">
@@ -96,7 +101,7 @@ export const Timeline = () => {
           {project.technologies.map((tech, i) => (
             <span
               key={i}
-              className="bg-gray-200 dark:bg-[#111827] px-3 py-1 rounded-md border border-gray-600 text-xs text-black dark:text-white"
+              className="bg-gray-200 dark:bg-[#1FB8CD]/30 px-3 py-1 rounded-md border border-[#1FB8CD]/60 text-xs text-black dark:text-white"
             >
               {tech}
             </span>
@@ -113,7 +118,7 @@ export const Timeline = () => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-3 py-1 text-sm rounded-md bg-[#111827] border border-gray-600 text-white hover:bg-[#1a2332] hover:border-blue-500 transition duration-200"
+          className="inline-flex items-center gap-2 px-3 py-1 text-sm rounded-md text-black bg-[#1FB8CD] hover:bg-[#1FB8CD]/90 transition duration-200"
         >
           <FaGithub /> GitHub
         </a>
@@ -127,10 +132,10 @@ export const Timeline = () => {
       className="w-full bg-white dark:bg-black font-sans md:px-10"
       ref={containerRef}
     >
-      
+     
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-3xl font-mono mb-4 text-orange-400  max-w-4xl">
-         [ PROJECTS ]
+        <h2 className="text-lg md:text-3xl font-mono mb-4 text-[#1FB8CD]  max-w-4xl">
+          [ PROJECTS ]
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
           Here's a chronological overview of my development journey.
@@ -172,7 +177,7 @@ export const Timeline = () => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className=" absolute inset-x-0 top-0  w-[2px] hidden sm:block  lg:bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className=" absolute inset-x-0 top-0  w-[2px] hidden sm:block  lg:bg-gradient-to-t from-[#1FB8CD] via-[#1FB8CD]/10 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

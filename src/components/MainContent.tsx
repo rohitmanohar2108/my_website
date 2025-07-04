@@ -21,14 +21,17 @@ import AnimatedHub from "./ui/AnimatedHub";
 import FogUi from "./ui/FogUi";
 import { BackgroundBeams } from "./ui/background-beams";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Skill from "./sections/Skill";
+import { Grid, Layout } from "lucide-react";
 
 const MainContent = () => {
   return (
     <ParallaxProvider>
     <div className="pt-16 lg:pt-0">
       
-      <div className="hidden sm:block"><FogUi /></div>
+      
       <Hero />
+    
 
       <GoogleGeminiEffectDemo />
       <div className="bg-gradient-to-t from-zinc-800/60 via-black to-black">
@@ -43,8 +46,9 @@ const MainContent = () => {
         <EducationCard />
       </div>
 
-      <AnimatedHub />
       <Skills />
+      <Skill />
+      
 
       <Timeline />
       <LampDemo />

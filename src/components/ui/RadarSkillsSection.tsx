@@ -78,14 +78,14 @@ const Radar = ({ className }: any) => {
         style={{ transformOrigin: "right center" }}
         className="absolute right-1/2 top-1/2 z-40 flex h-[5px] w-[500px] items-end justify-center bg-transparent animate-radar-spin"
       >
-        <div className="relative z-40 h-[1px] w-full bg-gradient-to-r from-transparent via-sky-600 to-transparent" />
+        <div className="relative z-40 h-[1px] w-full bg-gradient-to-r from-transparent via-[#1FB8CD] to-transparent" />
       </div>
       {circles.map((_, idx) => (
         <Circle
           style={{
             height: `${(idx + 1) * 8}rem`,
             width: `${(idx + 1) * 8}rem`,
-            border: `1px solid rgba(71, 85, 105, ${1 - (idx + 1) * 0.1})`,
+            border: `1px solid rgba(82, 82, 82, ${1 - (idx + 1) * 0.1})`,
           }}
           key={`motion-${idx}`}
           idx={idx}

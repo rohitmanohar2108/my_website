@@ -46,7 +46,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       }`}
     >
       {/* Brand */}
-      <div className="flex items-center space-x-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-900 via-purple-400 to-orange-500">
+      <div className="flex items-center space-x-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#1FB8CD]/10 via-[#1FB8CD]/70 to-[#1FB8CD]">
         <ChevronsRight className="w-6 h-6" />
         <span>ROHIT.</span>
       </div>
@@ -68,7 +68,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
               {hoveredIndex === index && (
                 <motion.span
                   layoutId="hoverBackground"
-                  className="absolute inset-0 rounded-full bg-[#111827]"
+                  className="absolute inset-0 rounded-xl bg-zinc-900"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.15 } }}
                   exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
@@ -81,7 +81,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
               className="relative z-10 group flex items-center space-x-2 px-3 py-2 font-mono rounded-full transition-all duration-300 "
             >
               
-              <span className="text-lg font-medium text-gray-500 group-hover:text-[#FFE2C1] transition-all duration-500">
+              <span className="text-lg font-medium text-gray-500 group-hover:text-[#1FB8CD] transition-all duration-500">
                 {label}
               </span>
             </button>
