@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle, BookOpen, Award, Users } from "lucide-react";
+import { CheckCircle, BookOpen, Award, Users, Calendar } from "lucide-react";
 import { Parallax } from "react-scroll-parallax";
 
 function EducationCard() {
@@ -10,18 +10,18 @@ function EducationCard() {
         className="min-h-screen bg-gradient-to-b from-zinc-800 to-black border-t-2 border-[#1FB8CD]  
    [box-shadow:0_-15px_20px_#1FB8CD80] rounded-t-full text-white py-16 px-4 font-sans"
       >
-       <div
-      className="absolute 
+        <div
+          className="absolute 
       left-1/2 transform -translate-x-1/2 
       -my-24 sm:-my-20 
       w-[90%] sm:w-[600px] md:w-[700px] lg:w-[800px] 
       h-[200px] sm:h-[250px] md:h-[300px] 
       rounded-full blur-3xl opacity-30"
-      style={{
-        background:
-          "radial-gradient(ellipse at center, rgba(31,184,205,0.8) 0%, rgba(31,184,205,0.1) 80%)",
-      }}
-    ></div>
+          style={{
+            background:
+              "radial-gradient(ellipse at center, rgba(31,184,205,0.8) 0%, rgba(31,184,205,0.1) 80%)",
+          }}
+        ></div>
 
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
@@ -50,10 +50,15 @@ function EducationCard() {
                 <div className="text-xl text-[#1FB8CD] mb-2">
                   Science Stream (PCM)
                 </div>
+                
                 <div className="text-lg text-gray-300 mb-2">
                   Dharampeth Science College, Nagpur
                 </div>
-                <div className="text-gray-400">2020 - 2022</div>
+                <div className="flex items-center text-gray-400 space-x-2">
+                  {/* Lucide Calendar Icon */}
+                  <Calendar className="w-5 h-5 text-gray-400" />
+                  <span>2020 - 2022</span>
+                </div>
               </div>
 
               <div className="space-y-4 text-sm">
@@ -126,7 +131,11 @@ function EducationCard() {
                 <div className="text-lg text-gray-300 mb-2">
                   National Institute of Technology Karnataka
                 </div>
-                <div className="text-gray-400">2022 - 2026</div>
+                <div className="flex items-center text-gray-400 space-x-2">
+                  {/* Lucide Calendar Icon */}
+                  <Calendar className="w-5 h-5 text-gray-400" />
+                  <span>2022 - 2026</span>
+                </div>
               </div>
 
               <div className="space-y-4 text-sm">
@@ -193,7 +202,11 @@ function EducationCard() {
                 <div className="text-lg text-gray-300 mb-2">
                   St. Xavier's High School, Nagpur
                 </div>
-                <div className="text-gray-400">2018 - 2020</div>
+                <div className="flex items-center text-gray-400 space-x-2">
+                  {/* Lucide Calendar Icon */}
+                  <Calendar className="w-5 h-5 text-gray-400" />
+                  <span>2015 - 2020</span>
+                </div>
               </div>
 
               <div className="space-y-4 text-sm">

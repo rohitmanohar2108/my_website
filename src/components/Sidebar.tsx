@@ -14,7 +14,13 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsGithub, BsInstagram, BsLinkedin, BsTelephone, BsTwitterX } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTelephone,
+  BsTwitterX,
+} from "react-icons/bs";
 import { BiBriefcase, BiHome } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
@@ -33,11 +39,11 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
   const navItems = [
     { id: "home", icon: BiHome, label: "HOME" },
     { id: "education", icon: SiEducative, label: "EDUCATION" },
-//experience section
+    //experience section
     { id: "skills", icon: GiSkills, label: "SKILLS" },
     { id: "projects", icon: GrProjects, label: "PROJECTS" },
     { id: "contact", icon: BsTelephone, label: "CONTACT" },
-  ]; 
+  ];
 
   return (
     <div
@@ -46,8 +52,17 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       }`}
     >
       {/* Brand */}
-      <div className="flex items-center space-x-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#1FB8CD]/10 via-[#1FB8CD]/70 to-[#1FB8CD]">
+      <div className="flex items-center space-x-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-[#1FB8CD]/50 via-[#1FB8CD]/80 to-[#1FB8CD] -ml-9">
         <ChevronsRight className="w-6 h-6" />
+        <div className="w-8 h-8 text-white">
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-full h-full"
+          >
+            <path d="M12 2L8 7h8l-4-5zm0 20l4-5H8l4 5zM2 12l5-4v8l-5-4zm20 0l-5 4V8l5 4z" />
+          </svg>
+        </div>
         <span>ROHIT.</span>
       </div>
 
@@ -71,7 +86,10 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
                   className="absolute inset-0 rounded-xl bg-zinc-900"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                  exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
                 />
               )}
             </AnimatePresence>
@@ -80,7 +98,6 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
               onClick={() => scrollToSection(id)}
               className="relative z-10 group flex items-center space-x-2 px-3 py-2 font-mono rounded-full transition-all duration-300 "
             >
-              
               <span className="text-lg font-medium text-gray-500 group-hover:text-[#1FB8CD] transition-all duration-500">
                 {label}
               </span>
@@ -92,15 +109,17 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       {/* Social icons */}
       {!mobile && (
         <div className="flex space-x-3">
-          {[BsGithub, BsTwitterX, BsLinkedin, BsInstagram].map((Icon, index) => (
-            <a
-              key={index}
-              href="#"
-              className="p-3 bg-white rounded-full text-black hover:text-black/90  transition-colors 300"
-            >
-              <Icon className="h-5 w-5" />
-            </a>
-          ))}
+          {[BsGithub, BsTwitterX, BsLinkedin, BsInstagram].map(
+            (Icon, index) => (
+              <a
+                key={index}
+                href="#"
+                className="p-3 bg-white rounded-full text-black hover:text-black/80  transition-colors 300"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            )
+          )}
         </div>
       )}
     </div>

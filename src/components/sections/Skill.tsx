@@ -100,7 +100,7 @@ function Skill() {
 
             {/* Backend Development - Featured */}
             <div
-              className="bg-[#1FB8CD]/10  to-blue-800/20 scale-110 backdrop-blur-3xl border border-[#1FB8CD] rounded-2xl p-8  transition-all duration-300 hover:shadow-[0_0_20px_rgba(31,184,205,0.3)]
+              className="bg-[#1FB8CD]/10  to-blue-800/20 scale-110 backdrop-blur-3xl border border-[#1FB8CD] rounded-2xl p-8  transition-all duration-300 shadow-[0_0_20px_rgba(31,184,205,0.3)]
  group relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">

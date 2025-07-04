@@ -177,7 +177,7 @@ export const Timeline = () => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className=" absolute inset-x-0 top-0  w-[2px] hidden sm:block  lg:bg-gradient-to-t from-[#1FB8CD] via-[#1FB8CD]/10 to-transparent from-[0%] via-[10%] rounded-full"
+            className=" absolute inset-x-0 top-0  w-[2px] hidden sm:block  lg:bg-gradient-to-t from-[#1FB8CD] via-[#1FB8CD]/60 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
