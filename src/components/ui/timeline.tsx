@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BackgroundBeams } from "./background-beams";
 import { Parallax } from "react-scroll-parallax";
+import { Calendar } from "lucide-react";
 
 interface TimelineEntry {
   title: string;
@@ -91,9 +92,11 @@ export const Timeline = () => {
     title: project.title,
     content: (
       <div className="bg-white dark:bg-[#0b0f19] p-6 rounded-xl shadow-xl border border-neutral-800 font-sans ">
-        <p className="text-sm text-[#1FB8CD] dark:text-gray-400 mb-2">
-          {project.duration}
+        <p className="flex items-center text-sm text-[#1FB8CD] dark:text-gray-400 mb-2 space-x-1">
+          <Calendar className="w-4 h-4" />
+          <span>{project.duration}</span>
         </p>
+
         <p className="text-base text-black dark:text-white mb-3">
           {project.description}
         </p>
@@ -132,7 +135,6 @@ export const Timeline = () => {
       className="w-full bg-white dark:bg-black font-sans md:px-10"
       ref={containerRef}
     >
-     
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-3xl font-mono mb-4 text-[#1FB8CD]  max-w-4xl">
           [ PROJECTS ]

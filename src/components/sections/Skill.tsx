@@ -11,7 +11,12 @@ import {
   Terminal,
   Layers,
   CheckCircle,
+  Figma,
 } from "lucide-react";
+import { FaAws, FaCss3, FaDocker, FaHtml5, FaNodeJs } from "react-icons/fa";
+import { SiCplusplus, SiExpress, SiPython } from "react-icons/si";
+import { DiAws, DiDjango, DiDocker, DiGithub, DiJavascript, DiLinux, DiMongodb, DiPostgresql, DiPython } from "react-icons/di";
+import { FaC } from "react-icons/fa6";
 
 function Skill() {
   return (
@@ -77,19 +82,20 @@ function Skill() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">C/C++</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <div className="flex items-center space-x-3"><FaC className="w-5 h-5 text-[#1FB8CD]" /><SiCplusplus className="w-5 h-5 text-[#1FB8CD]" /></div>
+                  
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Python</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiPython className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">JavaScript</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiJavascript className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">HTML/CSS</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <div className="flex items-center space-x-3"><FaHtml5 className="w-5 h-5 text-[#1FB8CD]" /><FaCss3 className="w-5 h-5 text-[#1FB8CD]" /></div>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Verilog</span>
@@ -124,7 +130,7 @@ function Skill() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">Node.js</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <FaNodeJs className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">Node.js</span>
@@ -136,11 +142,11 @@ function Skill() {
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">Express.js</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <SiExpress className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">MongoDB</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiMongodb className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">MongoDB</span>
@@ -148,11 +154,11 @@ function Skill() {
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-200">PostgreSQL</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiPostgresql className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 ">
                   <span className="text-gray-200">Python/Django</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiDjango className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
               </div>
             </div>
@@ -174,24 +180,24 @@ function Skill() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Git & GitHub</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiGithub className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Docker</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <FaDocker className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">AWS</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <FaAws className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Linux/Ubuntu</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <DiLinux className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Figma</span>
-                  <CheckCircle className="w-5 h-5 text-[#1FB8CD]" />
+                  <Figma className="w-5 h-5 text-[#1FB8CD]" />
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                   <span className="text-gray-300">Linux/Ubuntu</span>

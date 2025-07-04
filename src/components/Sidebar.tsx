@@ -36,6 +36,8 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
     }
   };
 
+  
+
   const navItems = [
     { id: "home", icon: BiHome, label: "HOME" },
     { id: "education", icon: SiEducative, label: "EDUCATION" },
@@ -105,6 +107,7 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
           </div>
         ))}
       </nav>
+      
 
       {/* Social icons */}
       {!mobile && (
