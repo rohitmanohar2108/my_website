@@ -26,7 +26,7 @@ export function BackgroundBeamsDemo() {
 
   return (
     <div className="w-full min-h-screen h-[100dvh] relative bg- overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-12 ">
-      <div className="w-full max-w-[87.6%] h-[80%] [box-shadow:0_2px_20px_#1FB8CD80] relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16  border-2 border-neutral-800 px-6 sm:px-8 py-8 z-10 ">
+      <div className="w-full max-w-[87.6%] h-[80%]  relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16  border-2 border-neutral-800 px-6 sm:px-8 py-8 z-10 ">
         {/* Vertical Dashed Divider Between Left & Right (only on large screens) */}
         <div className="hidden lg:block absolute top-0 bottom-0 left-[49.9%] w-0.5 border-l-2 border-dashed border-neutral-800 opacity-80 pointer-events-none" />
 
