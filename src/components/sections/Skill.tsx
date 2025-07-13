@@ -20,7 +20,7 @@ import { FaC } from "react-icons/fa6";
 
 function Skill() {
   return (
-    <div id="skills" className="hidden sm:block lg:block min-h-screen bg-black relative overflow-hidden">
+    <div id="skills" className="hidden sm:block lg:block min-h-screen bg-black relative overflow-hidden ml-24 rounded-b-2xl max-w-[90%] [box-shadow:0_15px_20px_#1FB8CD80] border-b-2 border-[#1FB8CD]">
       {/* Background with curved border effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-black"></div>
 

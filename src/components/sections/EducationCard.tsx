@@ -7,8 +7,9 @@ function EducationCard() {
     <div className="">
       <div
         id="education"
-        className="min-h-screen bg-gradient-to-b from-zinc-800 to-black border-t-2 border-[#1FB8CD]  
-   [box-shadow:0_-15px_20px_#1FB8CD80] rounded-t-full text-white py-16 px-4 font-sans"
+        className="min-h-52 ml-24 max-w-[90%] bg-gradient-to-b from-zinc-800 to-black border-t-2 border-[#1FB8CD]  
+[box-shadow:0_-15px_20px_#1FB8CD80] rounded-t-3xl text-white py-16 px-4 font-sans"
+
       >
         <div
           className="absolute 

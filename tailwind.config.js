@@ -13,6 +13,7 @@ export default {
         "border-glow": "border-glow 5s linear infinite",
         "spin-slow" : 'spin 5s linear infinite',
         spotlight: "spotlight 2s ease .75s 1 forwards",
+         'slide-x': 'slideX 2s ease-in-out infinite',
         
       },
       keyframes: {
@@ -31,6 +32,10 @@ export default {
           "100%": {
             "--angle": "360deg",
           },
+          slideX: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-50px)' }, // you can adjust the distance
+        },
         },
         spotlight: {
           "0%": {

@@ -7,6 +7,7 @@ import { ContainerTextFlip } from "./container-text-flip";
 import { CodeBlockDemo } from "./CodeBlockDemo";
 import { CardStack } from "./card-stack";
 import { CardStackDemo } from "../sections/CardStackDemo";
+import { PiDrone } from "react-icons/pi";
 
 export function BackgroundBeamsDemo() {
   const scrollToContact = () => {
@@ -25,7 +26,7 @@ export function BackgroundBeamsDemo() {
 
   return (
     <div className="w-full min-h-screen h-[100dvh] relative bg- overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans -mt-28 lg:-mt-12 ">
-      <div className="w-full max-w-[87.6%] h-[80%] relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16  border-2 border-neutral-800 px-6 sm:px-8 py-8 z-10 ">
+      <div className="w-full max-w-[87.6%] h-[80%] [box-shadow:0_2px_20px_#1FB8CD80] relative grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16  border-2 border-neutral-800 px-6 sm:px-8 py-8 z-10 ">
         {/* Vertical Dashed Divider Between Left & Right (only on large screens) */}
         <div className="hidden lg:block absolute top-0 bottom-0 left-[49.9%] w-0.5 border-l-2 border-dashed border-neutral-800 opacity-80 pointer-events-none" />
 
@@ -91,12 +92,12 @@ export function BackgroundBeamsDemo() {
 
         {/* RIGHT COLUMN – CODE BLOCK */}
 
-        <div className="absolute top-7 right-12 text-zinc-400 text-2xl font-mono animate-float-slow opacity-40">{`</>`}</div>
-
-        <div className="absolute bottom-16 right-16 text-zinc-400 text-2xl font-mono animate-float-fast opacity-35">{`{}`}</div>
+        <div className="absolute top-[90%] right-12 text-[#1FB8CD]  text-2xl font-mono animate-spin animate-slide-x">
+          <PiDrone className="w-8 h-8" />
+        </div>
 
         <div className=" flex items-center justify-center px-2 sm:px-6  transition-transform scale-100 rounded-lg lg:mt-24">
-          <div className="w-full max-w-md sm:max-w-lg">
+          <div className="w-full max-w-md sm:max-w-lg ">
             <CardStackDemo />
           </div>
         </div>
@@ -424,6 +425,7 @@ export function BackgroundBeamsDemo() {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black pointer-events-none col-span-8"></div>
         </div>
       </div>
+      
     </div>
   );
 }

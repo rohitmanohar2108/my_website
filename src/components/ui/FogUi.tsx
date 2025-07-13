@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowUp, ChevronDown, MoveDown } from "lucide-react";
+
 import { FaArrowDown } from "react-icons/fa";
 
 function FogUi() {

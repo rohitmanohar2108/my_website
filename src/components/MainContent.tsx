@@ -24,12 +24,13 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Skill from "./sections/Skill";
 import { Grid, Layout } from "lucide-react";
 
+
 const MainContent = () => {
   return (
     <ParallaxProvider>
     <div className="pt-16 lg:pt-0">
       
-      
+    
       <Hero />
     
 

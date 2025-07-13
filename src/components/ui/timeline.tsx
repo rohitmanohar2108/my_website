@@ -3,8 +3,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { BackgroundBeams } from "./background-beams";
-import { Parallax } from "react-scroll-parallax";
+
 import { Calendar } from "lucide-react";
 
 interface TimelineEntry {
