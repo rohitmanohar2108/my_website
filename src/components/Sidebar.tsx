@@ -98,9 +98,9 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
 
       <button
         onClick={() => scrollToSection(id)}
-        className="relative z-10 group flex items-center space-x-2 px-4 py-2 font-semibold text-white rounded-full transition-all duration-300"
+        className="relative z-10 group flex items-center space-x-2 px-4 py-2  font-semibold text-white rounded-full transition-all duration-300"
       >
-        <span className="text-sm font-medium group-hover:text-[#1FB8CD]">
+        <span className="text-sm font-medium group-hover:text-[#1FB8CD] transition-transform hover:scale-110">
           {label}
         </span>
       </button>
