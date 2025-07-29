@@ -12,7 +12,7 @@ const StarburstLine: React.FC<{ index: number; layer: number }> = ({ index, laye
   
   // Create gradient colors based on layer
   const gradientColors = [
-    'from-transparent via-blue-400 to-transparent',
+    'from-transparent via-blue-40 to-transparent',
     'from-transparent via-purple-400 to-transparent',
     'from-transparent via-cyan-300 to-transparent',
     'from-transparent via-pink-400 to-transparent'
