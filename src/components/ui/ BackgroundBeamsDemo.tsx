@@ -87,6 +87,12 @@ export function BackgroundBeamsDemo() {
               View Projects
               <ArrowDown className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </button>
+            <div className="absolute inset-x-0 -bottom-px h-px w-full bg-gradient-to-r from-transparent via-[#1FB8CD] to-transparent" />
+            <div className="absolute inset-x-0 -top-px h-px w-full bg-gradient-to-r from-transparent via-[#1FB8CD] to-transparent" />
+            <div className="absolute inset-y-0 left-0 w-px h-full bg-gradient-to-b from-transparent via-[#1FB8CD] to-transparent" />
+            <div className="absolute inset-y-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-[#1FB8CD] to-transparent" />
+
+
           </div>
         </div>
 
@@ -104,7 +110,7 @@ export function BackgroundBeamsDemo() {
       </div>
 
       <BackgroundBeams />
-      <div className="absolute w-[84.4%] mb-[30%]">
+      <div className="absolute w-[84.4%] mb-[29.7%]">
         <div className="w-full h-52 grid grid-cols-8 gap-px bg-black relative">
           {/* Box 1 - Diagonal grid pattern */}
           <div className="bg-black relative overflow-hidden border border-zinc-800 ">
@@ -425,7 +431,6 @@ export function BackgroundBeamsDemo() {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black pointer-events-none col-span-8"></div>
         </div>
       </div>
-      
     </div>
   );
 }

@@ -36,8 +36,6 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
     }
   };
 
-  
-
   const navItems = [
     { id: "home", icon: BiHome, label: "HOME" },
     { id: "education", icon: SiEducative, label: "EDUCATION" },
@@ -69,46 +67,45 @@ const Sidebar = ({ mobile = false }: { mobile?: boolean }) => {
       </div>
 
       {/* Nav links */}
-     <nav
-  className={`flex ${
-    mobile ? "flex-col space-y-2" : "space-x-2"
-  } items-center ml-16 bg-zinc-900 rounded-full px-4 py-2`}
->
-  {navItems.map(({ id, icon: Icon, label }, index) => (
-    <div
-      key={id}
-      className="relative group"
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
-    >
-      <AnimatePresence>
-        {hoveredIndex === index && (
-          <motion.span
-            layoutId="hoverBackground"
-            className="absolute inset-0 rounded-full bg-zinc-800"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.15 } }}
-            exit={{
-              opacity: 0,
-              transition: { duration: 0.15, delay: 0.2 },
-            }}
-          />
-        )}
-      </AnimatePresence>
-
-      <button
-        onClick={() => scrollToSection(id)}
-        className="relative z-10 group flex items-center space-x-2 px-4 py-2  font-semibold text-white rounded-full transition-all duration-300"
+      <nav
+        className={`flex ${
+          mobile ? "flex-col space-y-2" : "space-x-2"
+        } items-center ml-16 bg-zinc-900 rounded-full px-4 py-2`}
       >
-        <span className="text-sm font-medium group-hover:text-[#1FB8CD] transition-transform hover:scale-110">
-          {label}
-        </span>
-      </button>
-    </div>
-  ))}
-</nav>
+        {navItems.map(({ id, icon: Icon, label }, index) => (
+          <div
+            key={id}
+            className="relative group"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === index && (
+                <motion.span
+                  layoutId="hoverBackground"
+                  className="absolute inset-0 rounded-full bg-zinc-800"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
 
-      
+
+            <button
+              onClick={() => scrollToSection(id)}
+              className="relative z-10 group flex items-center space-x-2 px-4 py-2  font-semibold text-white rounded-full transition-all duration-300"
+            >
+              <span className="text-sm font-medium group-hover:text-[#1FB8CD] transition-transform hover:scale-110">
+                {label}
+              </span>
+            </button>
+          </div>
+        ))}
+      </nav>
 
       {/* Social icons */}
       {!mobile && (
